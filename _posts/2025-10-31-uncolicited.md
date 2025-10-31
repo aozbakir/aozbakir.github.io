@@ -4,7 +4,6 @@ title:  "Unsolicited"
 date:   2025-10-31 18:00:00 +0100
 categories: [essays, solitude]
 ---
-Unsolicited
 
 Running should be simple.
 Yet even on a quiet mountain road, solitude gets mistaken for distress.
