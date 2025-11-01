@@ -6,11 +6,6 @@ tags: [essays, solitude]
 author: Ali Ozbakir
 ---
 
-Running should be simple.
-Yet even on a quiet mountain road, solitude gets mistaken for distress.
-I wasn’t looking for help or even to be noticed.
-Still, I was caught in a conversation I never asked for: with strangers, myself, and silence.
-I had come to escape the noise.
 The mountain road curved ahead, its upward bends folding under the weight of my thoughts.
 My footsteps kept time with a quiet resistance.
 This wasn’t just exercise.
