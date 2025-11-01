@@ -2,7 +2,8 @@
 layout: post
 title:  "Unsolicited"
 date:   2025-10-31 18:00:00 +0100
-categories: [essays, solitude]
+tags: [essays, solitude]
+author: Ali Ozbakir
 ---
 
 Running should be simple.

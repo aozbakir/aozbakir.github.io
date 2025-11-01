@@ -3,6 +3,7 @@ layout: post
 title:  "skeleton crew"
 date:   2025-11-01 09:00:00 +0100
 categories: [essays, solitude]
+author: Ali Ozbakir
 ---
 It was a winter night. 
 The air was unexpectedly hot, dense with fog.
