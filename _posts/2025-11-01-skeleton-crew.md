@@ -12,7 +12,7 @@ It was like swimming.
 A part of me shivered—just a patch.
 I wasn’t sure why I could feel it so clearly.
 I want it to end—the discomfort, the shivering—but at the same time, I take a strange pleasure in it.
-
+<!-- more -->
 I was commuting by bicycle along Catharijnesingel, a north-south street flanked by a canal on one side and monumental former institutional buildings on the other. 
 The canal mirrored the street’s width, lending the area a rare openness. 
 But as the street neared the city centre, it dipped beneath a massive mall complex. 
