@@ -34,11 +34,13 @@ Yıllar sonra öğrendiğimde, hissettiğim şeyin kaynağına dair bir açıkla
 
 Bu panonun ne anlama geldiğini ancak yıllar sonra öğrendim. 2005 yılında Martin ve Inge Riebeek tarafından tasarlanmış. Meğer bu sanat eseriyle ‘cennet neye benzer?’ sorusunu sormak istemişler. Odysseus bile yeryüzündeki cenneti Calypso’nun yanında bulduğunda, hâlâ pompe eksikliğini ve nostos’un ateşini taşıyorsa, nihai yolun sonunu hayal etmek neye yarar?
 
+## Kaynakca:
+Riebeek, M. & I. (2005). Imagine Being There. Riebeek.net. Erişim: https://riebeek.net/imaginebeingthere.html Martin ve Inge Riebeek’in panosu “Imagine Being There” hakkında kendi sayfaları.
+
 --- 
 
 
 <!-- 
-
 Kaynakca
 1. https://upload.wikimedia.org/wikipedia/commons/b/bf/HUA-210075-Plattegrond_van_de_stad_Utrecht_de_gemeente_Zuilen_en_de_bossen_bij_Amelisweerd_en_Rhijnauwen_op_het_grondgebied_van_de_gemeente_Bunnik_met_weergave_v.jpg
 2. https://hetutrechtsarchief.nl/beeldmateriaal/detail/e1f0e5df-3d36-0ff2-e053-8f04000aa57a/media/51969e93-4ec1-3a78-dc58-1354b6b0c3e3?mode=detail&view=horizontal&q=kaart&rows=1&page=8
@@ -48,5 +50,4 @@ Kaynakca
 6. https://ilightu.nl/lichtkunst-2023/imagine-being-there/
 7. https://www.utrecht.nl/nieuws/nieuwsbericht-gemeente-utrecht/mix-van-wonen-leven-en-werken-op-rabobank-terrein-aan-croeselaan#:~:text=Gebouw%20Zilver%2C%20dat%20vroeger%20het,en%20circa%20130%20duurzame%20woningen.
 8. https://riebeek.net/imaginebeingthere.html
-
 -->
