@@ -29,6 +29,8 @@ Utrecht’ten ayrılıp İstanbul’a döndüğüm, orada yaşadığım on yıl 
 
 Yıllar sonra aynı yere döndüğümde, pano neredeyse silinmişti. "Imagine" hâlâ görünüyordu ama "Being there"in sıcaklığı sönmüştü. Işığın yerinde soğuk bir boşluk vardı. Calypso’nun adası kadar sessiz, bir o kadar uzak. Belki de yol hiç bitmemişti — sadece ışığın çekildiği yerde yeniden başlıyordu.
 
+Yıllar sonra öğrendiğimde, hissettiğim şeyin kaynağına dair bir açıklama bulur gibi oldum; ama belki de anlamını bilmek, o ilk karşılaşmanın büyüsünü biraz eksiltti.
+
 Bu panonun ne anlama geldiğini ancak yıllar sonra öğrendim. 2005 yılında Martin ve Inge Riebeek tarafından tasarlanmış. Meğer bu sanat eseriyle ‘cennet neye benzer?’ sorusunu sormak istemişler. Odysseus bile yeryüzündeki cenneti Calypso’nun yanında bulduğunda, hâlâ pompe eksikliğini ve nostos’un ateşini taşıyorsa, nihai yolun sonunu hayal etmek neye yarar?
 
 --- 
