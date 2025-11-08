@@ -48,8 +48,4 @@ Kaynakca
 7. https://www.utrecht.nl/nieuws/nieuwsbericht-gemeente-utrecht/mix-van-wonen-leven-en-werken-op-rabobank-terrein-aan-croeselaan#:~:text=Gebouw%20Zilver%2C%20dat%20vroeger%20het,en%20circa%20130%20duurzame%20woningen.
 8. https://riebeek.net/imaginebeingthere.html
 
-Yücelik (sublime): Yabanıl doğanın uyandırdığı, içinde hem hayranlık hem de dehşet taşıyan çelişkili duygular bütünü. Bu his; korku, huşu, hayranlık ve hazın aynı anda bir araya gelmesiyle ortaya çıkar ve bizi tek bir duygunun ötesine taşır. Tarihsel olarak Romantizm ve 18. yüzyıl estetik tartışmaları (Burke, Kant gibi düşünürler) tarafından biçimlenmiştir; doğanın hem korkutucu hem de yüce yönünü estetik olarak kabul etmeyi mümkün kılmıştır. Yücelik deneyimi öznenin akılcı düşünceyle kurduğu bağları gevşetir; duygu ağır bastıkça düşünce geri çekilir ve kişi büyük bir şeyin karşısında hem küçük hem de etkilenmiş hisseder. Bu yüzden yücelik, hem insanı küçültür hem onu bir tür yücelik hissine eriştirir: sınırlarımızı, doğanın büyüklüğünü ve kendi duygusal kapasitemizi aynı anda göstermesiyle tanımlanır.
-
-
-"İçimde bir boşluk olduğunu hissettim; nefesimi tutmuş, bisikletin üzerinde bir an donup kalmıştım. Kalbim hızla atıyordu, ellerim gidonun soğuk metaline yapıştı; yüzümde ince bir ter vardı. Başım hafifçe döndü. Tedirginlikle birlikte başka bir şey yükseldi — tehlikenin verdiği tuhaf bir haz; derinin altından geçen soğuk bir elektrik. Bu, zihinsel bir tahlilden çok, bedenimde doğrulanan bir deneyimdi: kendi uçurumuma bakıyordum."
 -->
