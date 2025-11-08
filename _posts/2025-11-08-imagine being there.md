@@ -6,6 +6,7 @@ tags: [essays, sublime, decay, crisis]
 author: Ali Ozbakir
 ---
 Van Zijstweg'den şehre doğru giderken, zamanda bir yolculuk yaptığımı hissederim. Bu yol boyunca ve üzerindeki köprüden Merwedekanaal'i geçerken, aynı zamanda Utrecht'in yüz yıl önceki kent–kır sınırını geçiyorum. Bu sınır başlangıçta çok açıktır: sadece kanalın kendisi değil, üzerinden geçen yolun güneyinde yer alan Veilinghaven'in minyatür liman dokusu ile kuzeyindeki Jaarbeurs'un devasa otoparkı, alçak sanayi tipi yapıları... Gündüz buradan geçerken kanalda kürek çekenler, kanal boyunca koşanlar; kanalın kavisi sayesinde güneyde artan derinlik ve batıda uzaktan görülen Transwijk parkının ağaçları içimi açar. Mutlu hissederim. Diğer taraftan, sınır bulanıktır: kent tarafında 150 yaşında bir bahçıvan evi, Huis van Mien; kır tarafında ise ilk petrol istasyonlarından biri, Villa Jongerius. Artık ikisi de anıt. 
+<!-- more -->
 
 Akşamları burası başka bir yere dönüşür. Merwedekanaal'in Croeselaan'a bağlandığı son kısımdaki apartman bloklarını saymazsam burada pek yaşayan da yoktur. O yüzden geceleri iyice karanlık ve ıssız olur. Gündüz ne kadar ferahsa akşamları o kadar tekinsiz.
 
