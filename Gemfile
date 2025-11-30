@@ -34,4 +34,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "jekyll", "~> 4.3.4"
 gem "csv"
 gem "base64"
-gem "tale"
+gem "jekyll-paginate"
+gem "jekyll-remote-theme"
