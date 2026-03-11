@@ -1,50 +1,18 @@
 ---
 layout: post
-title:  "skeleton crew"
+title:  "Sis"
 date:   2025-11-01 09:00:00 +0100
 categories: [essays, solitude]
 author: Ali Ozbakir
 ---
-It was a winter night. 
-The air was unexpectedly hot, dense with fog.
-My eyelids were damp with droplets of water. 
-Along with my body, I carried the heavy, sticky air. 
-It was like swimming.
-A part of me shivered—just a patch.
-I wasn’t sure why I could feel it so clearly.
-I want it to end—the discomfort, the shivering—but at the same time, I take a strange pleasure in it.
+
+Banyo uzadıkça sıcağa alışıyor tenim, sıcaklığı daha da yükseltiyorum. Buhar gitgide yoğunlaşıyor. Duşun ıslatmadığı yerlerim hafifçe titriyor. Hemen o yanımı döndürüyorum suya. Bu sefer diğer yanım banyo perdesine sürtüyor. Ne iğrenç, yapışkan bir temas. Hemen duvara doğru siniyorum. Böylece, daracık bir köşede, çıplak ve iki büklüm, dönüp duruyorum. Kalışımı uzatmak için suyun sıcaklığını artırmaktan başka çarem yok. Bundan zevk alıyorum — zavallı bir durumdayım. Kirpiklerim birbirine yapışmış, gözlerimi açamıyorum. Suyun sesi her şeyi bastırıyor. Yalnızca derimle yaşıyorum.
+
+O kış gecesi de böyle yaşıyordum. Dışarıda yoğun, sıcak bir sis vardı. Kirpiklerimde su damlaları, vücudum iyice ıslanmış, ağır ve yapışkan havayı beraberimde sürüklüyordum. Soldaki brutal binanın üzerinde, yukarıdan aşağı "Burn the Village" yazısı, sarımtırak lambalarla aydınlatılmış — lambaların halesi harfleri daha da büyütüyordu. Bir yanım titreyiverdi.
 <!-- more -->
-I was commuting by bicycle along Catharijnesingel, a north-south street flanked by a canal on one side and monumental former institutional buildings on the other. 
-The canal mirrored the street’s width, lending the area a rare openness. 
-But as the street neared the city centre, it dipped beneath a massive mall complex. 
-The underpass was dark and wind-funnelled, casting shadows, while the mall and adjacent concert hall enclosed the space in concrete and glass.
 
-I was approaching the busy junction linking the train station and commercial part of the city to the downtown and residential neighbourhoods.
-From the slowing motion ahead, I inferred the traffic light had turned red for us.
-On the opposite side, cars had stopped, their lights glowing brighter against the fog.
-The junction glared with an entangled mesh of bicycle lights, building lights, car lights, and street lamps—all scattered and reflected through the dense fog.
-Shades of grey dominated, punctuated by the occasional red stoplight piercing the thick dark blanket.
-Foreshortening made distances seem shorter and shapes larger.
-Tens, hundreds of bicycles were passing in front of me—silent, spectral, as if summoned by the fog.
-The stopped cars illuminated the facelessness of these figures, giving them center stage.
-It felt like witnessing a ritual—albeit one no one was aware of.
-I imagined myself as a to-be initiate to some secret bicycle cult.
-If the traffic light were to malfunction, the silent procession would erupt into chaos—a massacre waiting to happen, held at bay only by a blinking red beacon.
-But if this were daylight, I doubt I'd have seen it at all—not the ghost train, not the ritual. 
-The shadows and fog conjure the spectacle; in the harsh sun, it would dissolve into mere commute.
+Yolun altgeçide daldığı yerde hava değişti. Beton tünel rüzgarı huniledi, cam ve çelikten bir kompleks her yanı sardı. Sonra tünel bitti ve kavşak açıldı. Frenleri sıktım ama yavaşlayamıyordum; hafifçe yükseldim, kaslarım gerildi, yay gibiydim. Frenler çalışmıyordu; ayaklarım pedalı kavramaya çalışıyordu, derken topuğum kayıverdi. Selenin üzerine düştüm. Kıyafetlerim yapıştıkları yerden oynayınca, sis içime nüfuz etti. Ürperti ense köküne kadar tırmandı. Frenlerim nihayet tuttu. Önümdeki alay da yavaşladı. Kavşaktaydım, iç içe geçmiş bisiklet ışığı, bina aydınlatması, araba farı ve sokak lambalarıyla parlıyordu, ışık huzmeleri grinin tonlarıyla çarpışıyordu. Azıcık önümdeki kırmızı trafik ışığı kavşağı yönetiyordu.
 
-What actually was only two minutes of waiting felt much longer.
-I felt lonely—because I would never know if there was another person like me, who was fascinated and terrified by that scene.
-I felt scared—scared of something larger than myself.
-I became a spectator of the scene—and even of myself—as if standing outside myself.
-I might have been one of them.
-And perhaps, when the light turned for my side of the street, I would have joined the same act.
-I wish I could watch it again, to be able to picture it.
-There was a strong aesthetic to it.
-But it was not beauty.
-And yet, I couldn’t stay. I had to move on.
-The thought of stepping off, pausing to take a photo, freezing that moment forever, never crossed my mind. 
-Besides, a photo would only underline my stillness against all that motion. 
-A selfie, though… maybe that would’ve helped. 
-I and the faceless. 
-Would that ruin the whole point of a selfie, or finally fulfil it?
+Sisten belirip karşıma gelinceye kadar, yolun karşısındaki araba farlarının güçlü ışıkları ile her birinin gölgesini bir önündekine düşürüyordu. Sınırları belli olan akış bulanıklaşıyor, bisiklet ve sürücü birleşiyor, yüzler ortadan kalkıyordu. Binlerce bisiklet geçiyordu önümden ama ben sisin çağırdığı tek bir hayalet görüyordum. Ardı arkası kesilmiyordu. Sessiz alay anında can pazarına dönüşebilirdi, meğer ki kırmızı kılavuz ışığı sönüverseydi. Güneş altında bunların hiçbiri olmazdı — ne hayalet sürüsü, ne ritüel, yalnızca işe gidiş. Ne kadar zamandır buradaydım?
+
+Aslında yalnızca iki dakika beklemiştim. Sağıma ve soluma baktım. Daracık yolda omuz omuza sıkışmıştık. Önlerine bakıyorlardı insanlar. Hiç kimseyi yakalayamadım. Gerçi göz göze gelsek, n'olacaktı, gözlerimizi kaçıracaktık. Sonra ışık bize yeşil yandığında, aynı alaya katılacaktık. Belki o an hayaletin bir parçası değildim, ama hayaletten farkım da yoktu. Son birkaç saniye daha izledim ışık oyununu, grinin yüzlerce tonunu. Bisikletten inebilirdim, o anı dondurabilirdim — bir fotoğraf, tüm o hareketin karşısında yalnızca hareketsizliğimin altını çizerdi. Ama bir selfie... ben ve yüzsüzler, hayalet. Bu bir selfie'nin tüm amacını mahveder miydi, yoksa nihayet yerine mi getirirdi?
