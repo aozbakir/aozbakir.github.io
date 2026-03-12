@@ -1,83 +1,31 @@
 ---
 layout: post
-title:  "Unsolicited"
+title:  "Davetsiz yardım"
 date:   2025-10-31 18:00:00 +0100
 tags: [essays, solitude]
 author: Ali Ozbakir
 ---
 
-The mountain road curved ahead, its upward bends folding under the weight of my thoughts.
-My footsteps kept time with a quiet resistance.
-This wasn’t just exercise.
-I'd planned this run like an exit --hours of travel for a fleeting window of clarity.
-Solitude wasn’t sacred. 
-It was necessary.
+Saat on ikiydi. Hâlâ koşmaya başlamamıştım.  B, iş için Bursa'ya gidecekti — ben daha o cümle bitmeden Teferrüç'te ayrılıp yukarıda koşmayı planlamaya başlamıştım bile. Bir teneffüse ihtiyacım vardı.
 
-I slowly rose, my heartbeat a steady drum beneath the quiet.
-The trail was empty.
-I was running above the clouds. 
-The mountain stretched before me, its beauty almost oppressive in the stillness.
-The moment made me wish I had someone to share it with.
-But the silence wrapped around me, and with it, a deeper longing; for connection.
-Someone to share both struggle and triumph.
-I'd come for peace, but what I found was myself and that was harder to sit with.
-Without background clutter, the world’s perfection became an antagonist, amplifying the restlessness in my mind. 
-The silence grew louder. 
-And that’s when I felt alone.
-And though I kept moving, I knew I couldn’t stay in that state forever.
+Çay bahçesininki seksenlerin petrol ofisi helalarının korunmuş nadir bir örneğiydi — zemini, bir insanın başka bir insana neler yapabileceğini düşündürür cinsten. Beceriksiz bir hareketimin bedelini kıyafetlerimi yakarak ortadan kaldırmakla ödeyebilirdim. Askı olarak kullanabileceğim tek şey kapanmayan kapının kulbuydu.
 
-After an hour of steady climbing, I reached the steep incline that would push me higher, a challenge I welcomed to shake the heaviness.
-My shoes couldn’t grip the ice blocking the path ahead.
-Without hesitation, I turned back, retracing my steps downhill.
-Two hours of solitude and grinding ascent weighed on me, but finally, on the descent, I found my rhythm again.
-A rush of joy lifted me.
-The trail was forgiving now; my rhythm steady.
-Running downhill on asphalt felt like release, each step lighter, carrying away the weight of the climb.
-As the trail opened onto the road, I pressed on without slowing.
-With roughly seven kilometres left - the final third of my journey - I felt a renewed surge.
+"Karşı sokaktaki pastanede kahve vardır" demişlerdi — kahveyi bırak, pastane yoktu. Tıknaz, çilli, büyük kırmızı burunlu turist benim bulamadığım kahveyi bulmuştu.
 
-That’s when I noticed the car. 
-It had been trailing me for a while -- an all-men car, loud and slow.
-I was alone. 
-As they pulled closer, the man in the driver seat leaned halfway out the window, grinning and shouting something I couldn’t understand. 
-Maybe he was trying to help. 
-But it wasn’t the kind of help that feels safe  -- it felt like an intrusion wrapped in a smile.
-But I didn’t speak his language. 
-More importantly, I hadn’t asked for anything. 
-The exchange felt off-balance. 
-I was deep in a personal journey, moving through space and thought.
-He was interrupting it from the comfort of a vehicle, surrounded by others, grinning as if we were sharing a moment. 
-But we weren’t. 
-Whatever meaning he projected, I wasn’t part of it.
+Teleferik kabininde, fanilalarının üzerine ince siyah deri ceket geçirmiş iki adam — az önce, yalnızca kadınlardan oluşan bir kabine alınmayınca "sanki ırzlarına geçcez amına koyiim" diyenlerden başkası değildi — kabin görevlisi tarafından püskürtülmelerinin rövanşını bir savunma planı üzerinde tartışarak alıyorlardı: "Gaste lazım lan." "N'apcaz lan gasteyi, götümüze mi sokcaz." "Lan olum fanlenin içine sokcan, soğuğu kesçek." Hemen yanlarında, üzerinde yalnızca bir Hawaii gömleği ve hasır şapkasıyla oturan turistti — benim bulamadığım kahveyi hiç uğraşmadan bulmuş olan - hiç istifini bozmadan tebessüm ediyordu.
 
-I questioned my own reaction: Was I being unfair? 
-But it felt deeply intrusive. 
-His attempt didn’t feel like kindness. 
-More like a compulsion to fix what he didn’t understand.
-I wasn’t lost or struggling. 
-The sweat, running pack, tight pants - all signs I was here by choice. 
-And yet, he insisted. 
-Why?
+Sarıalan'da sis o kadar yoğundu ki dolmuşlar çalışmıyordu. Taksiye bindim. Şoför uzattıkça uzatıyordu — efendim ta ne zaman, çilingir sofrasından kalkmış, ta Volfram madeninin olduğu çanağa çıkmış, kalıp kalıp buz kesip getirmiş — "karım çok hasta, illa Uludağ'dan buz lazım" diyen müşterisi için. Bir saatlik dağ yolunda, üstelik tüm yolun arabayla gidilemediği bir yere, akşam vakti. Dışarıya bakıyordum, şoföre dönemiyordum.
 
-The absurdity hit me when I realised he wasn’t offering vague help. 
-He was offering a ride! 
-As if running alone meant I’d failed. 
-As if solitude couldn’t be a choice. 
-I was prepared, in control—yet he saw only someone to rescue.
-That assumption—overriding my intent—made my blood boil. 
-I snapped. 
-Told him to leave me alone. 
-My voice was sharper than I expected, but I didn’t regret it.
+Kötü hava artık aşağıda kalmıştı. Güneş tam tepedeydi. Sabahtan bu yana ilk defa üşümüyordum. Patikada benden başka kimse yoktu. Bacaklarım bedenimden hızlı gitmek istiyordu. Çok yavaş başladım. Ara ara bir pınardan gelen su sesiyle bölünüyordu sessizlik. Küçük vadiler ve sırtların patikayla buluştuğu yerlerde yol kıvrılıyor, her dönüşte azıcık daha dikleşiyordu. 
 
-Here’s the twist: maybe I did need help. 
-Just not the kind he offered. 
-What if my running wasn’t exercise but escape? 
-A quiet way to hold myself together? 
-Then his misplaced offer was still a response to something real. 
-That’s the trouble with unsolicited help: it often arrives in moments that resemble struggle, even if we call it endurance. 
-And when we finally ask for help, when things truly fall apart, it’s harder to find. 
-More conditional, more selective. 
-There’s a strange clarity in that imbalance: the world often responds to signs, not substance; to the appearance of vulnerability, not its reality. 
-Maybe that’s why I snapped. 
-Not because he was wrong to offer, but because he might have been right in a way I wasn’t ready to admit. 
-His timing was off, but his intuition wasn’t.
+Kalbimin atışını kulaklarımda duyuyordum. Kuruntu mu, yoksa sessizlik yüzünden mi? Sol ayağım sağdan daha sert sekiyordu; bacak değil sanki odun. Neredeyse bir saatin sonunda, Keşiştepe'ye çıkacak dik yamacın başına varabilmiştim. Tırmanmaya başladım. Şakaklarıma elimi götürünce, damarı elimde hissettim. Az bir yolum kalmıştı. Sonra ince bir buz katmanı yolumu kesti. Ayakkabılarım zemini tutmuyordu. Sağda ve solda geçecek yer aradım ama bulamadım. Tereddüt etmeden sırtımı dağa döndüm.
+
+İnişte ritmimi yeniden buldum. Şimdi bedenim bacaklarımın önünde gidiyordu. Asfalta kavuşup aşağı doğru hızlanırken, her adımım hafifliyordu. Belki, sol bacağım odun olmayabilirdi. Yol boyunca ayı, geyik, yabandomuzu ve kurt çıkabilir levhalarını görüyordum. Şunun şurasında yedi kilometre yolum kalmıştı. Yol virajlı ve boş olduğu için araçlar yolun ortasına kayıyordu. Gelen arabaların beni görmesi için ters yön emniyet şeridinden koşuyordum. Ne var ki, göz göze gelmemizle beraber sanki beni avlamak istermişçesine yolun ortasından kendi şeritlerine ve sonra emniyet şeridine doğru kayıyorlardı. Sürücülerin kafalarını yakalamış olmalıydım ki, bedenleri de bana doğru geliyorlardı. 
+
+Arkamda bir araç yanıma kadar gelip yavaşladı. İçi adamlarla doluydu. Sürücü bir eli direksiyonda olduğu halde camdan beline kadar çıkmış bana gülüyordu. Arapça konuştuğu için anlayamıyordum. Direksiyonu bırakıp iki eliyle bir beni bir arka koltuğu işaret ediyordu. Anladım, beni gideceğim yere bırakmak istiyordu.  Hayır! N’olur başka bir şey deseydi, baldırımdan kan akıyor ya da arkamdan ayı kovalıyor olaydı. Baldırımdan akmayan kan beynime sıçradı, ileriyi göstererek defol git diye bağırdım. Bütün manyaklar beni mi buluyor! Araç uzaklaştı. 
+
+İyilik etmek istemişmiş. Göt. Ne yanlış gördün ki? Ne diyeceksin, "Yok abi, o manada değil de, hani ayı çıkabilir" diyecek. İsteyerek geldim ben buraya tamam mı! Bak, sırt çantası, bak spor kıyafeti, görüyor musun, ben seçtim. İyilikmiş, sokmuşum yardımına.
+
+Tamamen sıyırmış mıydım, yoksa güzel bir gün mü geçirmiştim?
+
+Sarıalan'a neredeyse aynı anda vardık. Arabadan çıkarken göz göze geldik. İyilik yapmaya teşebbüs anındaki gibi gülmüyordu artık. Ben ise gülmemek için yanağımın içini ısırıyordum. Hiç vakit kaybetmeden teleferiğe yetiştim. Kabinde tek başınaydım. Temiz kıyafetlerimi üzerime giydim, sandviçimi yedim. Teleferiğin vasistasını açtım. Şimdi bir de gazete olsa ne iyi olurdu.
