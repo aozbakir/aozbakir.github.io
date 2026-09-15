@@ -60,20 +60,9 @@ Skills
 * GIS/geospatial: QGIS, GeoPandas, rasterio
 * Languages: English (fluent), Dutch (A2), Turkish (native)
 
-Supervision
-======
-* Yu Sheng, PhD candidate — AI-driven energy optimization, MAI-HOME project (expected completion 2027)
-
 Publications and teaching
 ======
-See the [Publications](/publications/) and [Teaching](/teaching/) pages for the full lists.
-
-Under review / in preparation
-======
-* Systematic literature review, MAI-HOME work package
-* Manuscript on MAS4TE (multi-agent energy trading platform), in preparation
-
-The full publication list, including earlier geophysics work, is on the [Publications](/publications/) page or [Google Scholar]({{ site.author.googlescholar }}).
+The full publication list (including earlier geophysics work and work under review/in preparation) is on the [Publications](/publications/) page or [Google Scholar]({{ site.author.googlescholar }}). Teaching and supervision are on the [Teaching](/teaching/) page.
 
 Service and leadership
 ======

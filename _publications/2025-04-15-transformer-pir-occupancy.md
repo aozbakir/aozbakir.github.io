@@ -3,7 +3,7 @@ title: "Enhancing room occupancy inference from sparse PIR sensor data using Tra
 collection: publications
 category: conferences
 permalink: /publication/2025-transformer-pir-occupancy
-excerpt: 'Fuses PIR sensor data with CO2, humidity, and temperature readings using Transformer models to recover occupancy ground truth non-invasively.'
+excerpt:
 date: 2025-04-15
 venue: 'ACM Symposium on Applied Computing (SAC), pp. 1570-1579'
 paperurl:
