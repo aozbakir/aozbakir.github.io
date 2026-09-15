@@ -27,6 +27,7 @@ redirect_from:
 
 - Teach Time Series Analysis and Forecasting; co-developed the MSc course Software Engineering and AI
 - Designed the system architecture for MAS4TE, a multi-agent reasoning platform for energy trading, including smart contracts for battery storage trading
+- Tech lead for GRINS, an end-to-end pipeline (with the University of Verona) extracting and classifying green-innovation claims from corporate annual reports
 - Supervise PhD candidate Yu Sheng on AI-driven energy optimization (MAI-HOME project, expected completion 2027)
 </div>
 
@@ -36,6 +37,8 @@ redirect_from:
 *Open Universiteit and University of Twente, Netherlands*
 
 - Time-series forecasting (RNN/LSTM/CNN/Transformers) for occupancy inference and energy optimization from sparse IoT data
+- Executed the full technical implementation of GO-KIT, a cross-border NL–BE smart-home energy pilot, including running LSTM networks in the test house
+- Contributed software development to a private Open Universiteit/APG collaboration on AI-based detection of corporate greenwashing
 - Extended time-series and index-based heuristics to optical Earth observation imagery
 - Built the API and core functionalities (model inference, iterative mosaicking with uncertainty) for the NWO-funded "Landslide Hunter" platform for automated landslide detection and mapping; co-authored 3 conference papers on it
 </div>
@@ -79,8 +82,8 @@ redirect_from:
 ## Skills
 
 <div class="cv-skill-group"><span class="cv-skill-label">Programming</span><span class="cv-tag">Python</span><span class="cv-tag">C/C++</span><span class="cv-tag">MATLAB</span><span class="cv-tag">FORTRAN</span><span class="cv-tag">Solidity</span><span class="cv-tag">bash</span></div>
-<div class="cv-skill-group"><span class="cv-skill-label">Machine learning</span><span class="cv-tag">TensorFlow/Keras</span><span class="cv-tag">scikit-learn</span><span class="cv-tag">Transformers/LLMs</span><span class="cv-tag">Prophet</span></div>
-<div class="cv-skill-group"><span class="cv-skill-label">Data & web</span><span class="cv-tag">PostgreSQL/SQL</span><span class="cv-tag">Flask</span><span class="cv-tag">FastAPI</span><span class="cv-tag">HTML/CSS/JS</span></div>
+<div class="cv-skill-group"><span class="cv-skill-label">Machine learning</span><span class="cv-tag">TensorFlow/Keras</span><span class="cv-tag">scikit-learn</span><span class="cv-tag">Transformers/LLMs</span><span class="cv-tag">Prophet</span><span class="cv-tag">spaCy</span><span class="cv-tag">Chroma</span></div>
+<div class="cv-skill-group"><span class="cv-skill-label">Data & web</span><span class="cv-tag">PostgreSQL/SQL</span><span class="cv-tag">SQLAlchemy</span><span class="cv-tag">Flask</span><span class="cv-tag">FastAPI</span><span class="cv-tag">HTML/CSS/JS</span><span class="cv-tag">Azure Document Intelligence</span></div>
 <div class="cv-skill-group"><span class="cv-skill-label">GIS/geospatial</span><span class="cv-tag">QGIS</span><span class="cv-tag">GeoPandas</span><span class="cv-tag">rasterio</span></div>
 <div class="cv-skill-group"><span class="cv-skill-label">Languages</span><span class="cv-tag">English (fluent)</span><span class="cv-tag">Dutch (A2)</span><span class="cv-tag">Turkish (native)</span></div>
 
