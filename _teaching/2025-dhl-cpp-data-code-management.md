@@ -7,6 +7,7 @@ excerpt: "Fundamentals of SQL and basic Git operations for the DHL/CPP business 
 venue: "Open Universiteit"
 date: 2025-09-01
 location: "Heerlen, Netherlands"
+tech: ["SQL", "Git"]
 ---
 
 Covers the fundamentals of SQL for data querying and management, and basic Git operations for maintaining a code repository (cloning, committing, branching, and collaborative workflows).

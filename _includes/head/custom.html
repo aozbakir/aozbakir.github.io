@@ -41,8 +41,9 @@
     border-bottom: none;
   }
 
-  /* Projects timeline */
-  .projects-timeline .list__item {
+  /* Timeline treatment (Projects, Teaching) */
+  .projects-timeline .list__item,
+  .teaching-timeline .list__item {
     position: relative;
     margin-left: 0.6em;
     padding-left: 1.25em;
@@ -51,11 +52,13 @@
     border-left: 2px solid var(--global-border-color);
     border-bottom: none;
   }
-  .projects-timeline .list__item:last-child {
+  .projects-timeline .list__item:last-child,
+  .teaching-timeline .list__item:last-child {
     padding-bottom: 0.1em;
   }
   .archive__item-tags { margin-top: 0.5em; margin-bottom: 0; }
-  .projects-timeline .list__item::before {
+  .projects-timeline .list__item::before,
+  .teaching-timeline .list__item::before {
     content: "";
     position: absolute;
     left: -5px;

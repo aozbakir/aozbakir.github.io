@@ -7,6 +7,7 @@ excerpt: "MSc course teaching students to treat AI as both a development partner
 venue: "Open Universiteit"
 date: 2025-09-01
 location: "Heerlen, Netherlands"
+tech: ["LLM", "Software Engineering", "RAG"]
 ---
 
 This course presents an MSc course, Software Engineering and AI. It rests on a simple premise: students should think like a chief engineer. They must own the full lifecycle, even when a task pushes them past their specialty.

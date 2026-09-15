@@ -7,6 +7,7 @@ excerpt: "C programming in practice, for the OpenEU programme."
 venue: "Open Universiteit"
 date: 2026-09-01
 location: "Heerlen, Netherlands"
+tech: ["C"]
 ---
 
 C programming in practice, for the OpenEU programme.
