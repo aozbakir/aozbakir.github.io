@@ -14,3 +14,5 @@ My research centers on machine learning for time series — occupancy inference 
 Before moving into computer science, I trained as a geophysicist (PhD, Utrecht University), working on GNSS network analysis, earthquake hazard modeling, and Earth observation. That background still shapes how I think about probabilistic modeling and messy, real-world sensor data.
 
 A full list of positions, teaching, and publications is on my [CV](/cv/), [Teaching](/teaching/), and [Publications](/publications/) pages.
+
+<div class="cv-skill-group"><span class="cv-tag">Time-Series ML</span><span class="cv-tag">Occupancy Inference</span><span class="cv-tag">Multi-Agent Systems</span><span class="cv-tag">Energy Trading</span><span class="cv-tag">Blockchain/Smart Contracts</span><span class="cv-tag">AI Ethics</span><span class="cv-tag">Disinformation</span></div>
