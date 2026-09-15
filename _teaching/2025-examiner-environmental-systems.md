@@ -3,6 +3,7 @@ title: "Environmental Systems Analysis and Scenarios"
 collection: teaching
 type: "Examiner"
 permalink: /teaching/environmental-systems-analysis-and-scenarios
+excerpt: "Examiner (NB2002) for a course on building and critiquing system-dynamics models of environmental scenarios."
 venue: "Open Universiteit"
 date: 2025-09-01
 location: "Heerlen, Netherlands"

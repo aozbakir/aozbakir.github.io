@@ -2,9 +2,9 @@
 title: "Green Innovation Extraction"
 collection: projects
 permalink: /project/green-innovation-extraction
-excerpt:
+excerpt: "Funded by GRINS, in collaboration with the University of Verona (Cristina Vlorio et al.)."
 date: 2026-04-01
-order: 5
+order: 4
 venue: "GRINS (Growing Resilient, INclusive and Sustainable); in collaboration with University of Verona"
 ---
 

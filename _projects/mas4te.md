@@ -2,7 +2,7 @@
 title: "MAS4TE"
 collection: projects
 permalink: /project/mas4te
-excerpt:
+excerpt: "Funded via Interreg Meuse-Rhine (€2.22M total budget). Consortium: Open Universiteit (lead), Boosting Alpha, Climate Cities, Université de Liège, FH Aachen, and Forschungszentrum Jülich."
 date: 2025-01-01
 order: 1
 venue: "Interreg Meuse-Rhine; consortium led by Open Universiteit"

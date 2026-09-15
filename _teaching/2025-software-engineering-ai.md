@@ -3,6 +3,7 @@ title: "Software Engineering and AI"
 collection: teaching
 type: "MSc course (co-developer)"
 permalink: /teaching/software-engineering-and-ai
+excerpt: "MSc course teaching students to treat AI as both a development partner and a black box to be tested and audited."
 venue: "Open Universiteit"
 date: 2025-09-01
 location: "Heerlen, Netherlands"
