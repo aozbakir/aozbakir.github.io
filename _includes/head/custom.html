@@ -90,23 +90,45 @@
     font-family: "Source Serif 4", Georgia, serif;
   }
 
-  /* CV page styling */
+  /* CV page styling: a bounded "paper" card, always light (like a printed
+     page) regardless of site dark/light mode, and noticeably denser than
+     regular site prose so it reads like a document meant to be scanned
+     fast, not a blog post. */
+  .cv-content {
+    --global-bg-color: #fff;
+    --global-text-color: #2d2f31;
+    --global-text-color-light: #6b6b6b;
+    --global-border-color: #e5e5e5;
+    --global-dark-border-color: #bdc1c4;
+    --global-footer-bg-color: #f5f5f5;
+    --global-link-color: #2d2f31;
+    --global-link-color-hover: #000;
+
+    background: var(--global-bg-color);
+    color: var(--global-text-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    padding: 2em 2.5em;
+    line-height: 1.4;
+  }
+  .cv-content p, .cv-content li { margin-bottom: 0.35em; }
   .cv-content h2 {
     text-transform: uppercase;
     letter-spacing: 0.06em;
     font-size: 1.15em;
     font-weight: 600;
     border-bottom: 2px solid var(--global-border-color);
-    padding-bottom: 0.5em;
-    margin-top: 2em;
-    margin-bottom: 1.1em;
+    padding-bottom: 0.4em;
+    margin-top: 1.4em;
+    margin-bottom: 0.8em;
   }
   .cv-content h2:first-of-type { margin-top: 0; }
   .cv-entry {
     position: relative;
     margin-left: 0.6em;
     padding-left: 1.25em;
-    padding-bottom: 1.5em;
+    padding-bottom: 1.1em;
     border-left: 2px solid var(--global-border-color);
   }
   .cv-entry:last-child { padding-bottom: 0.1em; }
@@ -114,18 +136,18 @@
     content: "";
     position: absolute;
     left: -5px;
-    top: 0.4em;
+    top: 0.35em;
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background: var(--global-text-color);
   }
-  .cv-entry > p:first-of-type { margin-bottom: 0.15em; }
+  .cv-entry > p:first-of-type { margin-bottom: 0.1em; }
   .cv-entry > p:nth-of-type(2) {
     font-style: italic;
     color: var(--global-text-color-light);
     margin-top: 0;
-    margin-bottom: 0.7em;
+    margin-bottom: 0.4em;
   }
   .cv-entry ul {
     margin-top: 0;
@@ -134,7 +156,7 @@
   }
   .cv-entry ul li {
     position: relative;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.35em;
   }
   .cv-entry ul li::before {
     content: "–";
