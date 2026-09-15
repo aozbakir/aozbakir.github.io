@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* PhD in Geophysics, Utrecht University, Netherlands (2019)
+* PhD in Geophysics, Utrecht University, Netherlands (2019) — dissertation: "Evolving plate boundaries in the Aegean-Anatolian region"
 * MSc in Solid Earth Geophysics, Eurasia Institute of Earth Sciences, Istanbul Technical University
 * BSc in Geological Engineering, Istanbul Technical University (ranked first in class)
 * BSc in Mining Engineering, Istanbul Technical University
@@ -64,28 +64,16 @@ Supervision
 ======
 * Yu Sheng, PhD candidate — AI-driven energy optimization, MAI-HOME project (expected completion 2027)
 
-Publications
+Publications and teaching
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
-Also published (citation details to add)
-======
-* 2 papers in *Tectonophysics* (2020–2021) — Bayesian probabilistic thermal modeling, Kandilli Observatory
-* 3 peer-reviewed conference papers on the "Landslide Hunter" platform (2023–2025)
+See the [Publications](/publications/) and [Teaching](/teaching/) pages for the full lists.
 
 Under review / in preparation
 ======
-* HOMESENSE — a multisensor dataset paper on household energy-related activity, submitted to *Scientific Data* (under review, post-revision)
 * Systematic literature review, MAI-HOME work package
 * Manuscript on MAS4TE (multi-agent energy trading platform), in preparation
+
+The full publication list, including earlier geophysics work, is on the [Publications](/publications/) page or [Google Scholar]({{ site.author.googlescholar }}).
 
 Service and leadership
 ======
