@@ -8,4 +8,6 @@ order: 7
 venue: "Temblor Inc."
 ---
 
-*(Details to add.)*
+*(Description to add.)*
+
+**My role:** Built the whole platform solo.
