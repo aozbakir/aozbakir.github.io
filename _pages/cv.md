@@ -21,9 +21,9 @@ redirect_from:
 ## Work experience
 
 <div class="cv-entry" markdown="1">
-**2025–present · Assistant Professor, Computer Science/AI**
+### <span class="cv-entry-date">2025–present</span> Assistant Professor, Computer Science/AI
 
-*Open Universiteit, Heerlen, Netherlands*
+<i class="fas fa-building-columns" aria-hidden="true"></i> *Open Universiteit, Heerlen, Netherlands*
 
 - Teach Time Series Analysis and Forecasting; co-developed the MSc course Software Engineering and AI
 - Designed the system architecture for MAS4TE, a multi-agent reasoning platform for energy trading, including smart contracts for battery storage trading
@@ -32,9 +32,9 @@ redirect_from:
 </div>
 
 <div class="cv-entry" markdown="1">
-**2023–2025 · Postdoctoral Researcher**
+### <span class="cv-entry-date">2023–2025</span> Postdoctoral Researcher
 
-*Open Universiteit and University of Twente, Netherlands*
+<i class="fas fa-building-columns" aria-hidden="true"></i> *Open Universiteit and University of Twente, Netherlands*
 
 - Time-series forecasting (RNN/LSTM/CNN/Transformers) for occupancy inference and energy optimization from sparse IoT data
 - Executed the full technical implementation of GO-KIT, a cross-border NL–BE smart-home energy pilot, including running LSTM networks in the test house
@@ -44,9 +44,9 @@ redirect_from:
 </div>
 
 <div class="cv-entry" markdown="1">
-**2021–2023 · Data Scientist & Software Developer, Temblor Inc.**
+### <span class="cv-entry-date">2021–2023</span> Data Scientist & Software Developer, Temblor Inc.
 
-*San Francisco, USA*
+<i class="fas fa-building-columns" aria-hidden="true"></i> *San Francisco, USA*
 
 - Led a global spatiotemporal earthquake activity-rate model for insurance/reinsurance risk assessment
 - Built a parallel variable-bandwidth KDE framework, achieving roughly 20x resolution improvement
@@ -54,26 +54,26 @@ redirect_from:
 </div>
 
 <div class="cv-entry" markdown="1">
-**2020–2021 · Postdoctoral Researcher**
+### <span class="cv-entry-date">2020–2021</span> Postdoctoral Researcher
 
-*Kandilli Observatory and Earthquake Research Institute, Istanbul, Turkey*
+<i class="fas fa-building-columns" aria-hidden="true"></i> *Kandilli Observatory and Earthquake Research Institute, Istanbul, Turkey*
 
 - Secured competitive funding for a Bayesian probabilistic thermal model (tomography, spectral analysis) and taught a graduate course on Plate Tectonics and Crustal Deformation
 </div>
 
 <div class="cv-entry" markdown="1">
-**2014–2018 · Program Manager, Education & Digital Initiatives, TEMA Foundation**
+### <span class="cv-entry-date">2014–2018</span> Program Manager, Education & Digital Initiatives, TEMA Foundation
 
-*Istanbul, Turkey*
+<i class="fas fa-building-columns" aria-hidden="true"></i> *Istanbul, Turkey*
 
 - Built a national e-learning platform for environmental education and a citizen-science biodiversity app
 - Managed a ~$500K annual budget and a team of 5; secured €177K in EU competitive funding
 </div>
 
 <div class="cv-entry" markdown="1">
-**2012–2014 · Research Engineer, Kandilli Observatory**
+### <span class="cv-entry-date">2012–2014</span> Research Engineer, Kandilli Observatory
 
-*Istanbul, Turkey*
+<i class="fas fa-building-columns" aria-hidden="true"></i> *Istanbul, Turkey*
 
 - Optimized GNSS network coverage via clustering (k-means, hierarchical), improving processed stations by over 20%
 - Non-linear regression analysis on GNSS time series
