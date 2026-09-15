@@ -1,0 +1,18 @@
+---
+title: "Tags"
+layout: archive
+permalink: /tags/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+  <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+  <div class="blog-timeline">
+  {% for post in tag[1] %}
+    {% include archive-single.html %}
+  {% endfor %}
+  </div>
+{% endfor %}

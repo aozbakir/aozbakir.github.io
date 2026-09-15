@@ -41,10 +41,11 @@
     border-bottom: none;
   }
 
-  /* Timeline treatment (Projects, Teaching, Publications, News) */
+  /* Timeline treatment (Projects, Teaching, Publications, News, Blog) */
   .projects-timeline .list__item,
   .teaching-timeline .list__item,
   .publications-timeline .list__item,
+  .blog-timeline .list__item,
   .news-timeline .timeline-item {
     position: relative;
     margin-left: 0.6em;
@@ -57,6 +58,7 @@
   .projects-timeline .list__item:last-child,
   .teaching-timeline .list__item:last-child,
   .publications-timeline .list__item:last-child,
+  .blog-timeline .list__item:last-child,
   .news-timeline .timeline-item:last-child {
     padding-bottom: 0.1em;
   }
@@ -65,6 +67,7 @@
   .projects-timeline .list__item::before,
   .teaching-timeline .list__item::before,
   .publications-timeline .list__item::before,
+  .blog-timeline .list__item::before,
   .news-timeline .timeline-item::before {
     content: "";
     position: absolute;

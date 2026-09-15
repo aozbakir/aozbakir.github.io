@@ -240,6 +240,7 @@ defaults:
       type: posts
     values:
       layout: single
+      permalink: /blog/:title/
       author_profile: true
       read_time: true
       comments: true
