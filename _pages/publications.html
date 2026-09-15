@@ -1,0 +1,45 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+<!-- New style rendering if publication categories are defined -->
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
+
+<h2>Also published (citation details to add)</h2><hr />
+<ul>
+<li>2 papers in <i>Tectonophysics</i> (2020–2021) — Bayesian probabilistic thermal modeling, Kandilli Observatory</li>
+<li>3 peer-reviewed conference papers on the "Landslide Hunter" platform (2023–2025)</li>
+</ul>
+<h2>Under review / in preparation</h2><hr />
+<ul>
+<li>HOMESENSE — a multisensor dataset paper on household energy-related activity, submitted to <i>Scientific Data</i> (under review, post-revision)</li>
+<li>Systematic literature review, MAI-HOME work package</li>
+<li>Manuscript on MAS4TE (multi-agent energy trading platform), in preparation</li>
+</ul>
