@@ -37,7 +37,7 @@ redirect_from:
 
 - Time-series forecasting (RNN/LSTM/CNN/Transformers) for occupancy inference and energy optimization from sparse IoT data
 - Extended time-series and index-based heuristics to optical Earth observation imagery
-- Built the API and core functionalities (model inference, iterative mosaicking with uncertainty) for the NWO-funded "Landslide Hunter" platform for automated landslide detection and mapping; co-authored 3 conference papers on it (2 EGU General Assembly abstracts, 1 peer-reviewed)
+- Built the API and core functionalities (model inference, iterative mosaicking with uncertainty) for the NWO-funded "Landslide Hunter" platform for automated landslide detection and mapping; co-authored 3 conference papers on it
 </div>
 
 <div class="cv-entry" markdown="1">
@@ -55,8 +55,7 @@ redirect_from:
 
 *Kandilli Observatory and Earthquake Research Institute, Istanbul, Turkey*
 
-- Secured $14K in competitive funding for a Bayesian probabilistic thermal model (tomography, spectral analysis)
-- Taught a graduate course on Plate Tectonics and Crustal Deformation
+- Secured competitive funding for a Bayesian probabilistic thermal model (tomography, spectral analysis) and taught a graduate course on Plate Tectonics and Crustal Deformation
 </div>
 
 <div class="cv-entry" markdown="1">
@@ -64,9 +63,8 @@ redirect_from:
 
 *Istanbul, Turkey*
 
-- Managed a ~$500K annual budget and led a team of 5
 - Built a national e-learning platform for environmental education and a citizen-science biodiversity app
-- Secured €177K in EU competitive funding
+- Managed a ~$500K annual budget and a team of 5; secured €177K in EU competitive funding
 </div>
 
 <div class="cv-entry" markdown="1">
@@ -80,7 +78,7 @@ redirect_from:
 
 ## Skills
 
-<div class="cv-skill-group"><span class="cv-skill-label">Programming</span><span class="cv-tag">Python</span><span class="cv-tag">C/C++</span><span class="cv-tag">MATLAB</span><span class="cv-tag">FORTRAN</span><span class="cv-tag">FEM</span><span class="cv-tag">Solidity</span><span class="cv-tag">bash</span></div>
+<div class="cv-skill-group"><span class="cv-skill-label">Programming</span><span class="cv-tag">Python</span><span class="cv-tag">C/C++</span><span class="cv-tag">MATLAB</span><span class="cv-tag">FORTRAN</span><span class="cv-tag">Solidity</span><span class="cv-tag">bash</span></div>
 <div class="cv-skill-group"><span class="cv-skill-label">Machine learning</span><span class="cv-tag">TensorFlow/Keras</span><span class="cv-tag">scikit-learn</span><span class="cv-tag">Transformers/LLMs</span><span class="cv-tag">Prophet</span></div>
 <div class="cv-skill-group"><span class="cv-skill-label">Data & web</span><span class="cv-tag">PostgreSQL/SQL</span><span class="cv-tag">Flask</span><span class="cv-tag">FastAPI</span><span class="cv-tag">HTML/CSS/JS</span></div>
 <div class="cv-skill-group"><span class="cv-skill-label">GIS/geospatial</span><span class="cv-tag">QGIS</span><span class="cv-tag">GeoPandas</span><span class="cv-tag">rasterio</span></div>
