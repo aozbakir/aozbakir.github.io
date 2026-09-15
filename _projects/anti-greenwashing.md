@@ -4,7 +4,7 @@ collection: projects
 permalink: /project/anti-greenwashing
 excerpt: "Private collaboration between Open Universiteit and APG."
 date: 2026-04-01
-order: 3
+order: 5
 venue: "Private collaboration between Open Universiteit and APG"
 ---
 

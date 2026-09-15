@@ -1,6 +1,6 @@
 # aozbakir.github.io
 
-Personal academic site for Ali Değer Ozbakir, built with [Academic Pages](https://github.com/academicpages/academicpages.github.io) (a Jekyll theme). Served automatically from the `main` branch via GitHub Pages.
+Personal academic site for Ali Değer Özbakır, built with [Academic Pages](https://github.com/academicpages/academicpages.github.io) (a Jekyll theme). Served automatically from the `main` branch via GitHub Pages.
 
 ## Local preview
 

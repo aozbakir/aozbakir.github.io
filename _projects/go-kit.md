@@ -4,7 +4,7 @@ collection: projects
 permalink: /project/go-kit
 excerpt: "Coordinated by Open Universiteit with data partner Calculus, housing corporations Weller Wonen, Wonen Zuid, and Cordium, and installer Habenu Van de Kreeke."
 date: 2024-06-01
-order: 5
+order: 6
 venue: "Cross-border NL–BE Limburg project; coordinated by Open Universiteit"
 ---
 

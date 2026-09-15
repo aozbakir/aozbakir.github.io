@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Ali Değer Ozbakir"
+title                    : "Ali Değer Özbakır"
 title_separator          : "-"
-name                     : &name "Ali Değer Ozbakir"
+name                     : &name "Ali Değer Özbakır"
 description              : &description "Assistant Professor of Computer Science / AI — time-series ML for energy systems, and the societal effects of AI"
 url                      : https://aozbakir.github.io
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
@@ -24,7 +24,7 @@ repository               : "aozbakir/aozbakir.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Ali Değer Ozbakir"
+  name             : "Ali Değer Özbakır"
   pronouns         : # example: "she/her"  
   bio              : "Assistant Professor, Computer Science/AI, Open Universiteit. Background in geophysics, machine learning, and software engineering."
   location         : "Heerlen, Netherlands"

@@ -4,7 +4,7 @@ collection: projects
 permalink: /project/mai-home
 excerpt: "Funded via Interreg Flanders–Netherlands. Coordinated by Open Universiteit with five housing corporations, SMEs, and social/knowledge institutions."
 date: 2023-09-01
-order: 2
+order: 3
 venue: "Interreg Flanders–Netherlands; coordinated by Open Universiteit"
 ---
 
