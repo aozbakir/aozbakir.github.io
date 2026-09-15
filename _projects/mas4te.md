@@ -4,6 +4,7 @@ collection: projects
 permalink: /project/mas4te
 excerpt:
 date: 2025-01-01
+order: 1
 venue: "Interreg Meuse-Rhine; consortium led by Open Universiteit"
 ---
 
@@ -11,4 +12,6 @@ Multi-Agent Systems for Trading Energy — a cross-border energy trading platfor
 
 Consortium: Open Universiteit (lead), Boosting Alpha, Climate Cities, Université de Liège, FH Aachen, and Forschungszentrum Jülich. Total budget €2.22M, funded via Interreg Meuse-Rhine.
 
-*(Role details to add.)*
+**Technology:** Python integration layer connecting the [ASSUME](https://github.com/assume-framework/assume) agent-based electricity-market simulation framework to real-time IoT device data (HEMS gateway, MQTT); Solidity smart contracts for pull-payment trade settlement, built and tested with web3.py, Brownie, and Slither static analysis.
+
+**My role:** Led the initial design of the LLM-based agent system and the blockchain settlement layer for peer-to-peer battery storage trades.

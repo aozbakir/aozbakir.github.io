@@ -10,6 +10,4 @@ paperurl:
 citation: 'Sheng, Y., Ozbakir, A.D., Maathuis, C., Iren, D., &amp; Bromuri, S. (2025). "Enhancing room occupancy inference from sparse PIR sensor data using Transformer models." <i>Proceedings of the ACM Symposium on Applied Computing (SAC 25)</i>, 1570-1579.'
 ---
 
-Part of the MAI-HOME project.
-
 *(Verify exact conference date and co-author names/initials before publishing.)*

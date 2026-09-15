@@ -4,6 +4,7 @@ collection: projects
 permalink: /project/go-kit
 excerpt:
 date: 2024-06-01
+order: 4
 venue: "Cross-border NL–BE Limburg project; coordinated by Open Universiteit"
 ---
 
@@ -11,4 +12,6 @@ A pilot deploying AI-driven smart-home sensors in 16 social housing units across
 
 Coordinated by Open Universiteit with data partner Calculus, housing corporations Weller Wonen, Wonen Zuid, and Cordium, and installer Habenu Van de Kreeke.
 
-*(Role details to add.)*
+**Technology:** Python data pipeline (pandas, scikit-learn) integrating the Calculus IoT API into a sensor database, with data cleaning and Isolation-Forest-based anomaly detection across occupancy, environmental, and utility sensors.
+
+**My role:** Postdoctoral researcher; executed the full technical implementation.

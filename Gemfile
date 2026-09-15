@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
+gem 'logger'
+
 group :jekyll_plugins do
   gem 'jekyll'
   gem 'jekyll-feed'
