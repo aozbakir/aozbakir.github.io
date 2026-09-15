@@ -172,6 +172,26 @@
     margin-bottom: 0.2em;
   }
   .news-text { margin: 0; }
+
+  /* Force light theme colors when printing, regardless of dark mode.
+     Values match the light theme's own palette (see :root in main.css),
+     except --global-text-color-light, bumped darker since screens render
+     pale grays with more legible contrast than most printers do. */
+  @media print {
+    :root {
+      --global-bg-color: #fff !important;
+      --global-footer-bg-color: #f2f3f3 !important;
+      --global-border-color: #f2f3f3 !important;
+      --global-dark-border-color: #bdc1c4 !important;
+      --global-link-color: #3a3a3a !important;
+      --global-link-color-hover: #000 !important;
+      --global-link-color-visited: #6b6b6b !important;
+      --global-masthead-link-color: #494e52 !important;
+      --global-text-color: #494e52 !important;
+      --global-text-color-light: #6b6b6b !important;
+    }
+    body { background: #fff !important; }
+  }
 </style>
 
 <!-- end custom head snippets -->
