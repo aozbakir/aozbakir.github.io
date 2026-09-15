@@ -28,7 +28,7 @@ Work experience
   * Open Universiteit and University of Twente, Netherlands
   * Time-series forecasting (RNN/LSTM/CNN/Transformers) for occupancy inference and energy optimization from sparse IoT data
   * Extended time-series and index-based heuristics to optical Earth observation imagery
-  * Built the NWO-funded "Landslide Hunter" web platform for automated landslide detection and mapping; co-authored 3 conference papers on it (2 EGU General Assembly abstracts, 1 peer-reviewed)
+  * Built the API and core functionalities (model inference, iterative mosaicking with uncertainty) for the NWO-funded "Landslide Hunter" platform for automated landslide detection and mapping; co-authored 3 conference papers on it (2 EGU General Assembly abstracts, 1 peer-reviewed)
 
 * 2021–2023: Data Scientist & Software Developer, Temblor Inc.
   * San Francisco, USA
