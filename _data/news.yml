@@ -1,0 +1,7 @@
+# Short, dated one-line updates shown on /news/. Newest entries can go anywhere;
+# the page sorts by date automatically. Use "text" for the one-line update
+# (Markdown allowed, e.g. *italics* for venue names).
+- date: 2026-08-01
+  text: 'Paper published in *Energy and Buildings*: "Improving indoor occupancy prediction using graph neural networks and positional encodings."'
+- date: 2026-09-01
+  text: 'Paper accepted at *Scientific Data* (Nature): "A multisensor dataset of energy use and activity in Dutch social housing" (HOMESENSE), now in post-production.'

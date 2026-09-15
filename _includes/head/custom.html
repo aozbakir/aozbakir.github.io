@@ -116,6 +116,27 @@
     background: var(--global-footer-bg-color);
     font-size: 0.85em;
   }
+
+  /* News page */
+  .news-item {
+    display: flex;
+    gap: 1.25em;
+    padding: 0.9em 0;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-date {
+    flex: 0 0 5.5em;
+    color: var(--global-text-color-light);
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding-top: 0.15em;
+  }
+  .news-text { flex: 1; }
+  @media (max-width: 600px) {
+    .news-item { flex-direction: column; gap: 0.2em; }
+  }
 </style>
 
 <!-- end custom head snippets -->
