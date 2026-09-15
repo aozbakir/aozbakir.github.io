@@ -7,7 +7,5 @@ excerpt:
 date: 2026-02-01
 venue: 'Scientific Data (Nature) — accepted'
 paperurl:
-citation: ''
+citation: 'Sheng, Y., Ozbakir, A.D., Iren, D., Maathuis, C., &amp; Bromuri, S. (2026). "A multisensor dataset of energy use and activity in Dutch social housing." <i>Scientific Data</i> (Nature), accepted.'
 ---
-
-*(Fill in exact author order and date once final proofs/DOI are available.)*

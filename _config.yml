@@ -23,7 +23,7 @@ repository               : "aozbakir/aozbakir.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Ali Değer Ozbakir"
   pronouns         : # example: "she/her"  
   bio              : "Assistant Professor, Computer Science/AI, Open Universiteit. Background in geophysics, machine learning, and software engineering."
@@ -227,6 +227,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -267,6 +270,14 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
 
 
 # Sass/SCSS
