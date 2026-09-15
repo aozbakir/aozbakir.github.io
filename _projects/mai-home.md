@@ -6,6 +6,7 @@ excerpt: "Funded via Interreg Flanders–Netherlands. Coordinated by Open Univer
 date: 2023-09-01
 order: 3
 venue: "Interreg Flanders–Netherlands; coordinated by Open Universiteit"
+tech: ["Python", "LSTM", "Transformers"]
 ---
 
 An Interreg Flanders–Netherlands project (started September 2023) combating energy poverty and reducing CO₂ emissions from housing across Dutch and Belgian Limburg. Builds on the earlier GO-KIT pilot. Combines sensor-based monitoring of living behavior with occupancy and environmental forecasting models that generate personalized energy-saving guidance, delivered through gamification and social learning, on the premise that renovation alone doesn't sustain energy savings once residents' motivation fades. Also runs educational workshops and a MOOC for housing-corporation and municipal staff. Coordinated by Open Universiteit with five housing corporations, SMEs, and social/knowledge institutions.

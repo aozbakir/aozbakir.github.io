@@ -7,7 +7,9 @@ author_profile: true
 
 {% include base_path %}
 
+<div class="projects-timeline">
 {% assign sorted_projects = site.projects | sort: 'order' %}
 {% for post in sorted_projects %}
   {% include archive-single.html %}
 {% endfor %}
+</div>

@@ -6,6 +6,7 @@ excerpt: "Funded by NWO."
 date: 2024-06-01
 order: 4
 venue: "NWO-funded; Open Universiteit and University of Twente"
+tech: ["Python", "Deep Learning", "Earth Observation"]
 ---
 
 A fully automated Earth-observation platform for rapid landslide detection and mapping (2024–2025), extending time-series and index-based heuristics to optical satellite imagery to map landslides even in semi-cloudy conditions. Built during a postdoctoral position at Open Universiteit and University of Twente.
