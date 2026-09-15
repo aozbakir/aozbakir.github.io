@@ -7,5 +7,6 @@ excerpt:
 date: 2021-01-01
 venue: 'Tectonophysics, 805, 228792'
 paperurl:
+status: Published
 citation: 'Güvercin, S.E., Konca, A.Ö., Özbakır, A.D., Ergintav, S., &amp; Karabulut, H. (2021). "New focal mechanisms reveal fragmentation and active subduction of the Antalya slab in the Eastern Mediterranean." <i>Tectonophysics</i>, 805, 228792.'
 ---

@@ -13,23 +13,23 @@ author_profile: true
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+  {% for category in site.publication_category %}
+    {% assign cat_posts = site.publications | where: "category", category[0] | reverse %}
+    {% if cat_posts.size > 0 %}
+      <h2>{{ category[1].title }}</h2><hr />
+      <div class="publications-timeline">
+        {% for post in cat_posts %}
+          {% include archive-single.html %}
+        {% endfor %}
+      </div>
+    {% endif %}
   {% endfor %}
 {% else %}
+  <div class="publications-timeline">
   {% for post in site.publications reversed %}
     {% include archive-single.html %}
   {% endfor %}
+  </div>
 {% endif %}
 
 <p>Also presented at numerous EGU General Assembly conference abstracts (2008–2025) on Anatolian-Aegean tectonics, GNSS velocity fields, and landslide mapping, and 3 Temblor.net science-communication pieces on the 2023 Türkiye earthquakes — see <a href="{{ site.author.googlescholar }}">Google Scholar</a> for the complete list.</p>

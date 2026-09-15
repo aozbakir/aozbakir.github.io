@@ -41,9 +41,10 @@
     border-bottom: none;
   }
 
-  /* Timeline treatment (Projects, Teaching) */
+  /* Timeline treatment (Projects, Teaching, Publications) */
   .projects-timeline .list__item,
-  .teaching-timeline .list__item {
+  .teaching-timeline .list__item,
+  .publications-timeline .list__item {
     position: relative;
     margin-left: 0.6em;
     padding-left: 1.25em;
@@ -53,12 +54,15 @@
     border-bottom: none;
   }
   .projects-timeline .list__item:last-child,
-  .teaching-timeline .list__item:last-child {
+  .teaching-timeline .list__item:last-child,
+  .publications-timeline .list__item:last-child {
     padding-bottom: 0.1em;
   }
   .archive__item-tags { margin-top: 0.5em; margin-bottom: 0; }
+  .status-tag { margin-left: 0.5em; vertical-align: middle; }
   .projects-timeline .list__item::before,
-  .teaching-timeline .list__item::before {
+  .teaching-timeline .list__item::before,
+  .publications-timeline .list__item::before {
     content: "";
     position: absolute;
     left: -5px;

@@ -7,5 +7,6 @@ excerpt:
 date: 2020-01-01
 venue: 'Tectonophysics, 787, 228471'
 paperurl:
+status: Published
 citation: 'Özbakır, A.D., Govers, R., &amp; Fichtner, A. (2020). "The Kefalonia Transform Fault: A STEP fault in the making." <i>Tectonophysics</i>, 787, 228471.'
 ---
