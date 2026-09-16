@@ -15,8 +15,8 @@ redirect_from:
 
 * PhD in Geophysics, Utrecht University, Netherlands (2019) — dissertation: "Evolving plate boundaries in the Aegean-Anatolian region"
 * MSc in Solid Earth Geophysics, Eurasia Institute of Earth Sciences, Istanbul Technical University
-* BSc in Geological Engineering, Istanbul Technical University (ranked first in class)
-* BSc in Mining Engineering, Istanbul Technical University
+* BSc in Geological Engineering, Istanbul Technical University
+* BSc in Mining Engineering, Istanbul Technical University (ranked first in class)
 
 ## Work experience
 
