@@ -9,6 +9,10 @@ redirect_from:
 
 {% include base_path %}
 
+<div class="cv-skill-group" style="justify-content: flex-end;">
+<a class="cv-tag" href="{{ base_path }}/files/cv.pdf" target="_blank" rel="noopener"><i class="fas fa-download" aria-hidden="true"></i> Download PDF</a>
+</div>
+
 <div class="cv-content" markdown="1">
 
 ## Education
