@@ -15,6 +15,8 @@ redirect_from:
 
 <div class="cv-content" markdown="1">
 
+Interdisciplinary AI researcher and Assistant Professor in Computer Science, specializing in time-series modeling, uncertainty-aware inference, and multi-agent systems for energy systems, smart environments, and Earth observation. Background spans academic research, funded collaborative projects, and large-scale industrial deployment of spatiotemporal models, following an earlier career in geophysics.
+
 ## Education
 
 * PhD in Geophysics, Utrecht University, Netherlands (2019) — dissertation: "Evolving plate boundaries in the Aegean-Anatolian region"
@@ -85,8 +87,8 @@ redirect_from:
 
 ## Skills
 
-<div class="cv-skill-group"><span class="cv-skill-label">Programming</span><span class="cv-tag">Python</span><span class="cv-tag">C/C++</span><span class="cv-tag">MATLAB</span><span class="cv-tag">FORTRAN</span><span class="cv-tag">Solidity</span><span class="cv-tag">bash</span></div>
-<div class="cv-skill-group"><span class="cv-skill-label">Machine learning</span><span class="cv-tag">TensorFlow/Keras</span><span class="cv-tag">scikit-learn</span><span class="cv-tag">Transformers/LLMs</span><span class="cv-tag">Prophet</span><span class="cv-tag">spaCy</span><span class="cv-tag">Chroma</span></div>
+<div class="cv-skill-group"><span class="cv-skill-label">Programming</span><span class="cv-tag">Python</span><span class="cv-tag">C/C++</span><span class="cv-tag">MATLAB</span><span class="cv-tag">FORTRAN</span><span class="cv-tag">Solidity</span><span class="cv-tag">bash</span><span class="cv-tag">Test-Driven Development</span></div>
+<div class="cv-skill-group"><span class="cv-skill-label">Machine learning</span><span class="cv-tag">TensorFlow/Keras</span><span class="cv-tag">scikit-learn</span><span class="cv-tag">Transformers/LLMs</span><span class="cv-tag">Prophet</span><span class="cv-tag">spaCy</span><span class="cv-tag">Chroma</span><span class="cv-tag">Pandas</span><span class="cv-tag">Matplotlib</span><span class="cv-tag">Seaborn</span><span class="cv-tag">Plotly</span></div>
 <div class="cv-skill-group"><span class="cv-skill-label">Data & web</span><span class="cv-tag">PostgreSQL/SQL</span><span class="cv-tag">SQLAlchemy</span><span class="cv-tag">Flask</span><span class="cv-tag">FastAPI</span><span class="cv-tag">HTML/CSS/JS</span><span class="cv-tag">Azure Document Intelligence</span></div>
 <div class="cv-skill-group"><span class="cv-skill-label">GIS/geospatial</span><span class="cv-tag">QGIS</span><span class="cv-tag">GeoPandas</span><span class="cv-tag">rasterio</span></div>
 <div class="cv-skill-group"><span class="cv-skill-label">Languages</span><span class="cv-tag">English (fluent)</span><span class="cv-tag">Dutch (A2)</span><span class="cv-tag">Turkish (native)</span></div>
