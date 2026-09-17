@@ -67,7 +67,7 @@ The comparison is in. Chronos here is `chronos-bolt-small`, 48M parameters, T5-b
 | LightGBM | 0.992 |
 | Seasonal-naive | 1.003 |
 
-Chronos wins. LoadCast hasn't closed the gap yet. It beats every classical baseline. Auto-ARIMA, LightGBM, and seasonal-naive all cluster within 0.02 MASE of each other, essentially tied. LoadCast holds a real margin over all three. Covariates make almost no difference, on or off, despite six separate encoders and learned gates for all of them. The one thing that's actually helped is training on more households. 150, then 450, then 900. Each step improved holdout MASE a bit further.
+Chronos wins. LoadCast hasn't closed the gap yet. It beats every classical baseline. Auto-ARIMA, LightGBM, and seasonal-naive all cluster within 0.03 MASE of each other, essentially tied. LoadCast holds a real margin over all three. Covariates make almost no difference, on or off, despite six separate encoders and learned gates fusing them in. The one thing that's actually helped is training on more households. 150, then 450, then 900. Each step improved holdout MASE a bit further.
 
 The table only shows averages. Here's what six of those held-out households actually look like, forecast window by forecast window:
 
