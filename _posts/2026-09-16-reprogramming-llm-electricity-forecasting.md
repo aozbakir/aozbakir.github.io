@@ -10,7 +10,7 @@ Until recently, the standard toolkit here was classical: seasonal-naive baseline
 
 But there's a second idea running alongside that trend. I find it more interesting. Instead of training a new model purely on time-series data, *reprogram* an existing general-purpose LLM, one already pretrained on huge amounts of text, to also handle numerical time series. [Time-LLM](https://arxiv.org/abs/2310.01728) (Jin et al., ICLR 2024) made this concrete. Patch the series: cut it into short, fixed-length chunks. Project each patch into something that looks like the LLM's own token embeddings, via a learned cross-attention layer over prototype vectors clustered from the LLM's own frozen vocabulary. Keep the backbone frozen. Train only a small adapter.
 
-Why bother, if a purpose-built time-series model already works well? Because a general-purpose LLM doesn't stop being a language model just because you've taught it a second trick. Chronos produces a forecast and nothing else. It has no language understanding at all. It can't take a natural-language question about the data. It can't explain a prediction. It can't reason about context described in words. A reprogrammed LLM, in principle, still can. That's worth exploring, even if raw accuracy doesn't win outright.
+Why bother, if a purpose-built time-series model already works well? Because a general-purpose LLM doesn't stop being a language model just because you've taught it a second trick. Chronos produces a forecast and nothing else. It has no language understanding at all. It can't take a natural-language question about the data. It can't explain a prediction. It can't reason about context described in words. A reprogrammed LLM, in principle, still can. Whether it actually does is worth testing, not just assuming, and worth it even if raw accuracy doesn't win outright.
 
 `loadcast` is my own attempt at this. Reprogramming [EuroLLM-1.7B](https://huggingface.co/utter-project/EuroLLM-1.7B), a frozen, general-purpose multilingual LLM never trained for time series, into a day-ahead electricity demand forecaster. At 1.7B parameters, it's small enough to fine-tune on a laptop. Time-LLM's own ablations show reprogramming a bigger backbone forecasts better, so this trades away some of that headroom for running without a GPU cluster. LoRA is that adapter. The backbone's own weights never change. LoRA adds small trainable matrices next to a few of them instead. Only a tiny fraction of the 1.7B parameters actually get updated. That's the light-touch fine-tuning. Training and evaluation both run on [Low Carbon London](https://www.kaggle.com/datasets/jeanmidev/smart-meters-in-london), half-hourly smart-meter readings from over 5,500 London households.
 
@@ -58,21 +58,25 @@ Overfitting is checked by evaluating the same model on a same-size sample of tra
 
 The comparison is in. Chronos here is `chronos-bolt-small`, 48M parameters, T5-based, zero-shot. Auto-ARIMA (via [statsforecast](https://github.com/Nixtla/statsforecast)) fits a seasonal order per household, then refits it for every evaluation window. LightGBM is a single gradient-boosted-trees model, trained once across all training households on lagged and calendar features, the one classical baseline that actually learns from the same training data LoadCast does. Seasonal-naive just repeats the value from exactly one day earlier.
 
-| Method | MASE |
-|---|---|
-| Chronos (zero-shot) | 0.755 |
-| LoadCast (covariates off) | 0.855 |
-| LoadCast (covariates on) | 0.855 |
-| Auto-ARIMA | 0.981 |
-| LightGBM | 0.992 |
-| Seasonal-naive | 1.003 |
+| Method | MASE | MAE (kWh) |
+|---|---|---|
+| Chronos (zero-shot) | 0.755 | 0.092 |
+| LoadCast (covariates off) | 0.855 | 0.106 |
+| LoadCast (covariates on) | 0.855 | 0.106 |
+| Auto-ARIMA | 0.981 | 0.118 |
+| LightGBM | 0.992 | 0.119 |
+| Seasonal-naive | 1.003 | 0.120 |
 
-Chronos wins. LoadCast hasn't closed the gap yet. It beats every classical baseline. Auto-ARIMA, LightGBM, and seasonal-naive all cluster within 0.03 MASE of each other, essentially tied. LoadCast holds a real margin over all three. Covariates make almost no difference, on or off, despite six separate encoders and learned gates fusing them in. The one thing that's actually helped is training on more households. 150, then 450, then 900. Each step improved holdout MASE a bit further.
+Chronos wins. LoadCast hasn't closed the gap yet, by about 0.014 kWh per half-hour reading on average across the holdout households. Small per household. Whether it matters at grid scale, aggregated across thousands of day-ahead schedules, isn't something this project measures yet. LoadCast still beats every classical baseline: Auto-ARIMA, LightGBM, and seasonal-naive all cluster within 0.03 MASE of each other, essentially tied, and LoadCast holds a real margin over all three. The one thing that's actually helped is training on more households. 150, then 450, then 900. Each step improved holdout MASE a bit further.
+
+Covariates make almost no difference, on or off. Checking the trained gates explains why: temperature, holiday, and calendar each start at a small, deliberately gentle contribution, a sigmoid-scaled gate initialized to let through about 12% of the signal, and after the full run, every one of them is still sitting within a couple of percentage points of that same starting value. They never learned to open up. Whether that's a training-signal problem, a single scalar gate is a narrow channel for gradient to push through, or these covariates genuinely don't carry much the model can't already infer from recent history, is an open question this doesn't answer yet.
 
 The table only shows averages. Here's what six of those held-out households actually look like, forecast window by forecast window:
 
 ![Forecast comparison across six held-out households: LoadCast, Chronos, Auto-ARIMA, LightGBM, and seasonal-naive](/images/loadcast-forecast-comparison.png)
 
 LoadCast and Chronos track closely on most of these. Both smooth over the sharpest spikes in actual demand. The six panels aren't interchangeable profiles, though. Three households are mostly flat with occasional large spikes, and every model, LoadCast included, misses at least one of those spikes outright, less a modeling gap than genuinely unpredictable behavior. One household's single spike, by contrast, is caught closely by all five methods, including seasonal-naive, suggesting a more routine, learnable pattern behind it. On the low-consumption, high-frequency-noise household, LoadCast and LightGBM chase the noise while Chronos and Auto-ARIMA stay close to flat. It's a tentative read across six windows, not a systematic breakdown by consumption type, but a reminder that one averaged MASE number hides real variation in how, and when, these methods actually fail.
+
+I tested the language-capability argument directly, in a small way. LoadCast itself can't answer anything in words: reprogramming never loads a text-generation head, so the forecast can't be phrased in language by that model at all. Pairing it with a separate, ordinarily instruction-tuned sibling model does work, technically. But the language side is currently weak. Left to reason freely over the numbers, even a well-prompted small instruct model hallucinated readily. A working version needed its role narrowed to paraphrasing a fact computed in advance, checked afterward for invented numbers. An initial exercise, not a verdict on the idea.
 
 So the general-purpose LLM doesn't win yet. It's not obviously the wrong bet either. Still ahead of the classical toolkit, with the clearest lever so far being more data, not a smarter architecture. Whether reprogramming ever closes the gap to a purpose-built time-series model, or whether the real payoff is the language capability Chronos structurally can't have, is still open.
