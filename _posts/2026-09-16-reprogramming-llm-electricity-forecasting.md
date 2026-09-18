@@ -4,13 +4,14 @@ excerpt: "Reprogramming a general-purpose LLM to forecast electricity demand, in
 tags: ["Time-Series ML", "LLMs", "Energy"]
 ---
 
-**TL;DR:** Reprogramming a general-purpose LLM, LoadCast, built on EuroLLM-1.7B, loses to zero-shot Chronos, and blends into a cluster with an LSTM, a CNN, and a plain Transformer trained from scratch on the same data, all far cheaper to train and easier to explain. The one case still standing for it: a reprogrammed LLM might be able to talk about its own forecast, a capability unique to it among everything tested here. Tested that here too. Still a long way off.
+> **TL;DR:** Reprogramming a general-purpose LLM, LoadCast, built on EuroLLM-1.7B, loses to zero-shot Chronos, and blends into a cluster with an LSTM, a CNN, and a plain Transformer trained from scratch on the same data, all far cheaper to train and easier to explain. There's a bigger potential though: a reprogrammed LLM might be able to talk about its own forecast, a capability unique to it among everything tested here. Tested that here too. But with a backbone this small, unfortunately, that didn't work yet.
+{: .notice}
 
-Residential electricity demand is becoming harder to predict. Solar panels, batteries, heat pumps, EV chargers: a household now draws from the grid and feeds back into it on a much shorter cycle than older forecasting methods were built for. Day-ahead forecasts feed directly into how grid operators balance supply and demand. They also feed into how peer-to-peer energy markets, like the one I work on in [MAS4TE](/project/mas4te), price and settle trades. Better forecasts at the household level are genuinely useful.
+Residential electricity demand is becoming harder to predict. Solar panels, batteries, heat pumps, EV chargers: a household now draws from the grid and feeds back into it on a much shorter cycle than older forecasting methods were built for. Day-ahead forecasts feed directly into how grid operators balance supply and demand. They also feed into how peer-to-peer energy markets, like the one I work on in [MAS4TE](/project/mas4te), price and settle trades. Whether that error actually matters much, at a single household's scale, is worth coming back to at the end.
 
-Until recently, the standard toolkit here was classical: seasonal-naive baselines, ARIMA-family models, gradient-boosted trees, later RNNs and Transformers trained from scratch on each dataset. That's shifted in the last two years. A new generation of *time-series foundation models*, [Chronos](https://arxiv.org/abs/2403.07815), [TimesFM](https://arxiv.org/abs/2310.10688), [Moirai](https://arxiv.org/abs/2402.02592), and others, are pretrained on huge, diverse collections of time series. They generalize to a new problem zero-shot, the same way GPT-style models generalize across text tasks without retraining. Chronos in particular is a strong baseline. Hard to beat.
+Until recently, the standard toolkit here was classical: seasonal-naive baselines, ARIMA-family models, gradient-boosted trees, later RNNs and Transformers trained from scratch on each dataset. That's shifted in the last two years. A new generation of *time-series foundation models*, [Chronos](https://arxiv.org/abs/2403.07815), [TimesFM](https://arxiv.org/abs/2310.10688), [Moirai](https://arxiv.org/abs/2402.02592), and others, are pretrained on huge, diverse collections of time series. They generalize to a new problem zero-shot, the same way GPT-style models generalize across text tasks without retraining. Chronos in particular is hard to beat.
 
-But there's a second idea running alongside that trend. I find it more interesting. Instead of training a new model purely on time-series data, *reprogram* an existing general-purpose LLM, one already pretrained on huge amounts of text, to also handle numerical time series. [Time-LLM](https://arxiv.org/abs/2310.01728) (Jin et al., ICLR 2024) made this concrete. Patch the series: cut it into short, fixed-length chunks. Project each patch into something that looks like the LLM's own token embeddings, via a learned cross-attention layer over prototype vectors clustered from the LLM's own frozen vocabulary. Keep the backbone frozen. Train only a small adapter.
+But there's a second idea running alongside that trend. I find it more interesting. A pretrained LLM never learned electricity. It learned to recognize and continue patterned sequences, since language itself is full of trend, periodicity, and repetition: grammar, lists, recurring phrases. *Reprogram* an existing general-purpose LLM, one already pretrained on huge amounts of text, to point that same skill at numerical time series instead. [Time-LLM](https://arxiv.org/abs/2310.01728) (Jin et al., ICLR 2024) made this concrete. Patch the series: cut it into short, fixed-length chunks. Project each patch into something that looks like the LLM's own token embeddings, via a learned cross-attention layer over prototype vectors clustered from the LLM's own frozen vocabulary. The frozen LLM then does what it always does: predicts what continues the sequence. Keep the backbone frozen. Train only a small adapter.
 
 Why bother, if a purpose-built time-series model already works well? Because a general-purpose LLM stays a language model even after you've taught it a second trick. Chronos produces a forecast, and only a forecast. Numbers in, numbers out, is the whole of what it understands. A reprogrammed LLM, in principle, still understands language: it could take a natural-language question about the data, explain a prediction, reason about context described in words. Whether it actually does is worth testing directly, worth it even if raw accuracy comes up short.
 
@@ -18,47 +19,51 @@ Why bother, if a purpose-built time-series model already works well? Because a g
 
 ![loadcast architecture: kWh history and covariates are patched and embedded, projected into the frozen LLM's token space via a reprogramming cross-attention layer, passed through frozen EuroLLM with LoRA adapters, and decoded into a day-ahead forecast](/images/loadcast-architecture.svg)
 
-That's the forward pass. Here's the training loop around it, logging and data loading stripped out:
+That's the architecture. In algorithmic form, real PyTorch calls kept:
 
-```python
-for epoch in range(config.training.epochs):
-    for batch in loader:
-        optimizer.zero_grad()
-        forecast = model(batch)
+```
+def forward(batch):
+    x ← RevIN.normalize(batch.target)
+    patches ← PatchEmbedding(x)
+    covariates ← gate(CovariateEncoder(batch.temperature, batch.holiday, batch.calendar))
+    static ← gate(StaticEmbed(batch.acorn, batch.tariff))
+    tokens ← patches + covariates + static
 
-        # loss in RevIN-normalized space: computing it on raw kWh would let
-        # high-consumption households dominate the gradient
-        context_stats = RevIN()
-        context_stats.normalize(batch["target"])
-        forecast_normed = (forecast - context_stats.mean) / context_stats.std
-        future_normed = (batch["future"] - context_stats.mean) / context_stats.std
+    prototypes ← kmeans(LLM.embedding_matrix)          # fixed, precomputed once
+    reprogrammed ← CrossAttention(query=tokens, key=value=prototypes)
 
-        # huber, not mse: caps how much a single noisy window can swing the loss
-        loss = torch.nn.functional.huber_loss(forecast_normed, future_normed, delta=1.0)
+    hidden ← FrozenLLM_with_LoRA(reprogrammed)
+    forecast ← ForecastHead(hidden)
+    return RevIN.denormalize(forecast)
+```
 
+Training optimizes it, same algorithmic form:
+
+```
+for epoch in epochs:
+    for batch in train_loader:              # batch.target: history, batch.future: ground truth
+        forecast ← forward(batch)
+        loss ← huber_loss(normalize(forecast), normalize(batch.future))   # RevIN-normalized
         loss.backward()
-        torch.nn.utils.clip_grad_norm_(trainable_params, config.training.grad_clip_norm)
-        optimizer.step()
-        scheduler.step()
+        clip_grad_norm_(trainable_params)
+        optimizer.step(); scheduler.step()
 
-    holdout_mase = evaluate_holdout_mase(model, holdout_loader, holdout_building_series, config)
-    save_checkpoint(model, config, run_name)
-    if holdout_mase < best_holdout_mase:
-        best_holdout_mase = holdout_mase
-        save_checkpoint(model, config, f"{run_name}_best")
+    mase ← evaluate_holdout(forward)
+    save_checkpoint(run_name)
+    if mase < best_mase: save_checkpoint(run_name + "_best")
 ```
 
 RevIN, reversible instance normalization, rescales each window by its own mean and standard deviation before the model ever sees it, then undoes that rescaling on the output. The loss is computed in that normalized space rather than raw kWh, so every household's gradient contribution stays on the same scale. It uses Huber loss instead of MSE, keeping one noisy window's effect on the whole batch's loss bounded.
 
-The split is by household rather than by time. 900 training households, 30 held out. Stratified by ACORN group (a UK classification of households by socioeconomic and lifestyle type) and tariff type, split once with a fixed seed rather than k-fold cross-validated. Holdout households stay out of training entirely, so this measures generalization to buildings that are entirely new to the model, beyond just unseen time windows from familiar ones.
+The split is by household rather than by time. 900 training households, 30 held out. Stratified by ACORN group (a UK classification of households by socioeconomic and lifestyle type) and tariff type, split once with a fixed seed rather than k-fold cross-validated.
 
 Each forecast uses 7 days of history to predict the next day, half-hour by half-hour. Evaluation runs on a fixed window stride across the holdout set: 5,944 windows total. Training took about 100 minutes, on a single M4 MacBook Pro.
 
-MASE, mean absolute scaled error, scores a forecast against a naive same-time-yesterday repeat. Below 1.0 means beating that baseline.
+MASE, mean absolute scaled error, scores a forecast against a naive same-time-yesterday repeat: a MASE of 0.8 means the average error is 80% the size of that naive baseline's, not an absolute 0.8 kWh. Below 1.0 means beating the baseline, but the margins here are modest, not dramatic: even Chronos, the best of everything tested, is still making about 75% of naive's error. That says as much about how strong the baseline is as about the models: a lot of a single household's half-hourly demand really is routine, so "the same time yesterday" is a harder target to beat than it looks. The table below also reports MAE in kWh directly, for a concrete sense of scale.
 
-Overfitting is checked by evaluating the same model on a same-size sample of training households instead of the holdout set. That scores MASE 0.844, close to the holdout's 0.855. That's a small enough gap to rule out serious overfitting. Holdout MASE is also tracked every epoch during training, and the best checkpoint sometimes comes before the last epoch. Here it peaked at epoch 6 of 8, then ticked back up slightly.
+Overfitting is checked against a same-size sample of training households: MASE 0.844, close to the holdout's 0.855, too small a gap for serious overfitting. Checkpointing tracks holdout MASE every epoch and keeps the best one, since that peak doesn't always land on the last epoch. Here it peaked at epoch 6 of 8.
 
-The comparison spans a real, tiered ladder of approaches. Seasonal-naive is the baseline. LightGBM is classical ML: a single gradient-boosted-trees model, trained once across all training households on lagged and calendar features. Auto-ARIMA is classical too, but statistical rather than learned: a seasonal order fit per household, refit for every evaluation window. Above that, deep learning trained from scratch on this data: an LSTM and a dilated CNN, both fed the raw sequence directly, sized conventionally for their architecture family rather than parameter-matched to LoadCast. Matching capacity exactly made both impractically slow: the parameter-matched LSTM was still stuck in its first epoch after 30+ minutes, against 88 seconds for the equivalently-sized Transformer's whole epoch, and the parameter-matched CNN stalled the same way after 15+ minutes, against a 2-minute total run for its smaller replacement. One tier up, a from-scratch Transformer, patch-based like LoadCast, parameter-matched to LoadCast's own trainable count (19.3M against 18.0M) to isolate whether pretraining is earning its keep: a modern architecture, initialized entirely from scratch. Chronos (`chronos-bolt-small`, 48M parameters, T5-based) is modern in a different sense, a genuine time-series foundation model, pretrained at scale, zero-shot. LoadCast is the last rung: fine-tuning a general-purpose LLM pretrained on text rather than time series.
+The comparison spans a tiered ladder of approaches. Seasonal-naive is the baseline. LightGBM is classical ML: a single gradient-boosted-trees model, trained once across all training households on lagged and calendar features. Auto-ARIMA is classical too, but statistical rather than learned: a seasonal order fit per household, refit for every evaluation window. Above that, deep learning trained from scratch on this data: an LSTM and a dilated CNN, both fed the raw sequence directly, sized conventionally for their architecture family rather than parameter-matched to LoadCast. Parameter-matching isolates whether pretraining is earning its keep: hold capacity fixed, and only the approach differs. That wasn't practical for the LSTM and CNN, though. An LSTM sized to match LoadCast's parameter count was still stuck in its first epoch after 30+ minutes, against 88 seconds for the equivalently-sized Transformer's whole epoch: LSTMs process a sequence step by step, so wall-clock cost scales with size far more steeply than a Transformer's parallel attention does. The CNN's case is murkier: a parameter-matched version stalled the same way after 15+ minutes for reasons never fully diagnosed, against a 2-minute total run for its smaller replacement. One tier up, a from-scratch Transformer, patch-based like LoadCast, parameter-matched to LoadCast's own trainable count (19.3M against 18.0M): a modern architecture, initialized entirely from scratch. Chronos (`chronos-bolt-small`, 48M parameters, T5-based) is modern in a different sense, a genuine time-series foundation model, pretrained at scale, zero-shot. LoadCast is the last rung: fine-tuning a general-purpose LLM pretrained on text rather than time series.
 
 | Method | Category | MASE | MAE (kWh) |
 |---|---|---|---|
@@ -87,8 +92,10 @@ Accuracy is one axis among several here, and on the others the ranking flips. Ch
 
 So the general-purpose LLM still trails, and the case against it now extends beyond accuracy. LoadCast blends into a cluster of from-scratch deep-learning alternatives, an LSTM, a CNN, a plain Transformer, that took a fraction of the training time and, in two of three cases, a fraction of the parameters too. It's also the most expensive of everything tested to retrain, and the least explainable. On accuracy, cost, and explainability alike, the alternatives come out ahead of whatever EuroLLM's pretrained weights contribute here. Two questions stay open regardless: whether reprogramming would ever earn back that gap with more data or a proper hyperparameter search of its own, and whether a reprogrammed LLM can genuinely talk about what it forecasts, tested above in a small way and still early. The second one is the more interesting bet. It's the one thing here that a purpose-built model, however cheap and however accurate, was never built to do.
 
+Coming back to that: mostly, once aggregated, a single household's forecast error doesn't matter much, the same portfolio effect that makes a grid operator's job easier than any one forecast would suggest. It matters more directly downstream of that. A battery scheduler, a demand-response programme, a peer-to-peer market like MAS4TE: all of them dispatch against a forecast, and a bad one means charging a battery at the wrong hour or mispricing a trade. As more of the grid's flexibility moves down to the household level, batteries, EVs, solar, that's where forecast accuracy actually earns its keep.
+
 **AI attribution:**
 
 <img src="/images/abbreviated_statement.svg" alt="AI attribution badge: Human-AI blend, stylistic edits, new content, human-initiated, reviewed. Claude Sonnet 5, Anthropic. v1.0" width="556" height="40">
 
-This work was created with an even blend of human and AI contributions. AI was used to make stylistic edits, such as changes to structure, wording, and clarity. AI was used to make new content: implementing the ideas in Time-LLM as working code (`scratch_transformer_baseline.py`, `scratch_lstm_baseline.py`, `scratch_cnn_baseline.py` in the loadcast repo). AI was prompted for its contributions, or AI assistance was enabled. AI-generated content was reviewed and approved. One disclaimer beyond what this badge covers: I reviewed the design, the results, and the writing throughout. The underlying code is the one exception: I trusted it. The following model or application was used: Claude Sonnet 5, Anthropic. Statement generated with the [AI Attribution Toolkit](https://aiattribution.github.io/create-attribution).
+Human-AI blend: AI wrote the scratch Transformer/LSTM/CNN baseline code and polished this post's prose. I directed and reviewed both. The code specifically, I trusted as given. Model: Claude Sonnet 5, Anthropic. Statement via the [AI Attribution Toolkit](https://aiattribution.github.io/create-attribution).
