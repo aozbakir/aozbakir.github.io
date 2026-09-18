@@ -2,6 +2,9 @@
 title: "Reprogramming a General-Purpose LLM for Electricity Demand Forecasting"
 excerpt: "Reprogramming a general-purpose LLM to forecast electricity demand, instead of building yet another specialized time-series model. Here's the case for it, and how it stacks up against seven other methods, from a naive baseline to a genuine time-series foundation model."
 tags: ["Time-Series ML", "LLMs", "Energy"]
+header:
+  image: loadcast-forecast-comparison.png
+  teaser: loadcast-forecast-comparison.png
 ---
 
 > **TL;DR:** Reprogramming a general-purpose LLM, LoadCast, built on EuroLLM-1.7B, loses to zero-shot Chronos, and blends into a cluster with an LSTM, a CNN, and a plain Transformer trained from scratch on the same data, all far cheaper to train and easier to explain. There's a bigger potential though: a reprogrammed LLM might be able to talk about its own forecast, a capability unique to it among everything tested here. Tested that here too. But with a backbone this small, unfortunately, that didn't work yet.
