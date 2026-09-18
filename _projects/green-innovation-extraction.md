@@ -6,6 +6,7 @@ excerpt: "Funded by GRINS, in collaboration with the University of Verona (Crist
 date: 2026-04-01
 order: 2
 venue: "GRINS (Growing Resilient, INclusive and Sustainable); in collaboration with University of Verona"
+status: "Completed"
 tech: ["Python", "LLM", "NLP"]
 ---
 

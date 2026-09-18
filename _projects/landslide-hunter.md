@@ -6,6 +6,7 @@ excerpt: "Funded by NWO."
 date: 2024-06-01
 order: 4
 venue: "NWO-funded; Open Universiteit and University of Twente"
+status: "Completed"
 tech: ["Python", "Deep Learning", "Earth Observation", "Image Transformers", "CNN"]
 ---
 

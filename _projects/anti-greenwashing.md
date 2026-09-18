@@ -6,6 +6,7 @@ excerpt: "Private collaboration between Open Universiteit and APG."
 date: 2023-11-01
 order: 5
 venue: "Private collaboration between Open Universiteit and APG"
+status: "Completed"
 tech: ["Python", "NLP", "Transformers"]
 ---
 

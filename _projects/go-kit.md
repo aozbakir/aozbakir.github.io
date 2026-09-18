@@ -6,6 +6,7 @@ excerpt: "Coordinated by Open Universiteit with data partner Calculus, housing c
 date: 2022-10-01
 order: 6
 venue: "Cross-border NL–BE Limburg project; coordinated by Open Universiteit"
+status: "Completed"
 tech: ["Python", "LSTM", "scikit-learn"]
 ---
 

@@ -6,6 +6,7 @@ excerpt: "Funded via Interreg Flanders–Netherlands. Coordinated by Open Univer
 date: 2023-09-01
 order: 3
 venue: "Interreg Flanders–Netherlands; coordinated by Open Universiteit"
+status: "Completed"
 tech: ["Python", "LSTM", "Transformers", "GNN"]
 ---
 

@@ -6,6 +6,7 @@ excerpt: "Funded via Interreg Meuse-Rhine (€2.22M total budget). Consortium: O
 date: 2025-09-01
 order: 1
 venue: "Interreg Meuse-Rhine; consortium led by Open Universiteit"
+status: "Ongoing"
 tech: ["Python", "Solidity", "Blockchain"]
 ---
 

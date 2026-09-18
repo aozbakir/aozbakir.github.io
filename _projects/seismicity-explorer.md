@@ -6,6 +6,7 @@ excerpt: "Full-stack earthquake hazard modeling and event-set simulation platfor
 date: 2022-01-01
 order: 7
 venue: "Temblor Inc."
+status: "Completed"
 tech: ["Python", "Flask", "PostGIS", "MapLibre", "Hazard Modeling"]
 ---
 
