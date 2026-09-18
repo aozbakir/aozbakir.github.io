@@ -1,7 +1,7 @@
 ---
 title: "Time Series Analysis and Forecasting"
 collection: teaching
-type: "Course — DHL/CPP programme (business)"
+type: "Course, DHL/CPP programme (business)"
 permalink: /teaching/dhl-cpp-time-series-analysis
 excerpt: "Three lectures plus a hands-on lab covering decomposition, stationarity, ARIMA/SARIMA, and end-to-end forecasting, for the DHL/CPP business programme."
 venue: "Open Universiteit"

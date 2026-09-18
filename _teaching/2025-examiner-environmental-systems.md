@@ -10,6 +10,6 @@ location: "Heerlen, Netherlands"
 tech: ["Python", "System Dynamics"]
 ---
 
-Examiner for this course (course code NB2002), which teaches students to build, calibrate, and critique system-dynamics models of environmental scenarios — including a coupled logistic model of population and resource depletion (Easter Island), Lotka-Volterra predator-prey dynamics, and a case study of grazer population dynamics at the Oostvaardersplassen nature reserve.
+Examiner for this course (course code NB2002), which teaches students to build, calibrate, and critique system-dynamics models of environmental scenarios, including a coupled logistic model of population and resource depletion (Easter Island), Lotka-Volterra predator-prey dynamics, and a case study of grazer population dynamics at the Oostvaardersplassen nature reserve.
 
 [Course page](https://www.ou.nl/en/-/nb2002_environmental-systems-analysis-and-scenarios)

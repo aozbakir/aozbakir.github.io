@@ -16,4 +16,4 @@ In collaboration with the University of Verona (Cristina Vlorio et al.), funded 
 
 **Technology:** Python pipeline with SQLAlchemy/Alembic-backed persistence and a Chroma vector store, combining transformer-based environmental-relevance scoring (EnvironmentalBERT/ClimateBERT) with LLM-driven extraction (OpenAI/Anthropic APIs) and multi-label classification of corporate disclosures, built with a domain-driven, onion-architecture design.
 
-**My role:** Tech lead for GRINS; wrote the whole pipeline end to end — the full extraction, classification, and traceability process.
+**My role:** Tech lead for GRINS; wrote the whole pipeline end to end: the full extraction, classification, and traceability process.

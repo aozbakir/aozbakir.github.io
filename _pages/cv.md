@@ -19,7 +19,7 @@ Interdisciplinary AI researcher and Assistant Professor in Computer Science, spe
 
 ## Education
 
-* PhD in Geophysics, Utrecht University, Netherlands (2019) — dissertation: "Evolving plate boundaries in the Aegean-Anatolian region"
+* PhD in Geophysics, Utrecht University, Netherlands (2019), dissertation: "Evolving plate boundaries in the Aegean-Anatolian region"
 * MSc in Solid Earth Geophysics, Eurasia Institute of Earth Sciences, Istanbul Technical University
 * BSc in Geological Engineering, Istanbul Technical University
 * BSc in Mining Engineering, Istanbul Technical University (ranked first in class)
@@ -99,7 +99,7 @@ The full publication list (including earlier geophysics work and work under revi
 
 ## Service and leadership
 
-* Convener, vEGU21 / EGU22 — "Active tectonics and geodynamics of the Eastern Mediterranean"
+* Convener, vEGU21 / EGU22, "Active tectonics and geodynamics of the Eastern Mediterranean"
 * Reviewer for *Earth and Planetary Science Letters*, *Nature Communications Earth & Environment*, *Mediterranean Geoscience Reviews*
 
 </div>

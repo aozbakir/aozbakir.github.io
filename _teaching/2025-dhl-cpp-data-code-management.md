@@ -1,7 +1,7 @@
 ---
 title: "Data and Code Management"
 collection: teaching
-type: "Course — DHL/CPP programme (business)"
+type: "Course, DHL/CPP programme (business)"
 permalink: /teaching/dhl-cpp-data-and-code-management
 excerpt: "Fundamentals of SQL and basic Git operations for the DHL/CPP business programme."
 venue: "Open Universiteit"

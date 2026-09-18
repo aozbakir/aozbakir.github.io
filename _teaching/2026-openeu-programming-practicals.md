@@ -1,7 +1,7 @@
 ---
 title: "Programming Practicals"
 collection: teaching
-type: "Course — OpenEU programme"
+type: "Course, OpenEU programme"
 permalink: /teaching/openeu-programming-practicals
 excerpt: "C programming in practice, for the OpenEU programme."
 venue: "Open Universiteit"
