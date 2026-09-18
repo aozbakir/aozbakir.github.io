@@ -14,6 +14,6 @@ A private collaboration between Open Universiteit and APG (2023–2025) on AI-ba
 
 With Deniz Iren, Clara Maathuis, Gerard Mertens, Karen Maas, and Petru Curseu at Open Universiteit.
 
-**Technology:** Python pipeline (Hugging Face transformers, spaCy, Azure Document Intelligence for PDF paragraph extraction) computing a Cheap Talk Index (per Bingler et al., 2024) from corporate sustainability disclosures, tested on real annual reports (ASML, Audi, Heineken, H&M).
+**Technology:** Reproduced Bingler et al.'s Cheap Talk Index (2024), which scores specificity, commitment, and action in corporate climate disclosures via ClimateBERT classifiers, then built a Python pipeline (Hugging Face transformers, spaCy, Azure Document Intelligence for PDF paragraph extraction) and a web interface to operationalize it, tested on real annual reports (ASML, Audi, Heineken, H&M).
 
-**My role:** Responsible for software development; maintained the repository.
+**My role:** Reproduced the Cheap Talk Index methodology and built the pipeline and web interface end to end.
