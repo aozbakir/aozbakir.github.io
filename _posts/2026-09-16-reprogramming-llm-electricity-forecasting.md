@@ -3,7 +3,6 @@ title: "Reprogramming a General-Purpose LLM for Electricity Demand Forecasting"
 excerpt: "Reprogramming a general-purpose LLM to forecast electricity demand, instead of building yet another specialized time-series model. Here's the case for it, and how it stacks up against seven other methods, from a naive baseline to a genuine time-series foundation model."
 tags: ["Time-Series ML", "LLMs", "Energy"]
 header:
-  image: loadcast-forecast-comparison.png
   teaser: loadcast-forecast-comparison.png
 ---
 
