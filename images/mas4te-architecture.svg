@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 640" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Columns: 1/2/4/5 share x-center 700. 8/6/7 share x-center 1220. -->
+
+  <!-- ============ EDGES ============ -->
+  <g stroke="#333" stroke-width="2" fill="none">
+    <!-- E1 User - Agent (straight) -->
+    <path d="M700,90 L700,170" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <!-- E2 Market - Agent (straight) -->
+    <path d="M320,210 L550,210" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <!-- E3 Agent - Blockchain (straight) -->
+    <path d="M850,210 L1080,210" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <!-- E4 Agent - Hardware (straight, same column) -->
+    <path d="M700,250 L700,340" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <!-- E5 Hardware - Grid (straight, same column) -->
+    <path d="M700,430 L700,500" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <!-- E6 Grid - Settlement (only remaining bend: different row AND column) -->
+    <path d="M870,500 L870,385 L1120,385" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <!-- No edge between Settlement (on-chain) and Settlement (off-chain · BRP):
+         pay has no on-chain link to the BRP's judgment at all. -->
+    <!-- E8 Settlement - Energy Provider (straight, same column) -->
+    <path d="M1220,430 L1220,500" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ============ EDGE LABELS (offset clear of every line) ============ -->
+  <g fill="#333">
+    <g font-size="15"><rect x="706" y="118" width="172" height="20" fill="#fff"/><text x="710" y="133">schedule &amp; preferences</text></g>
+
+    <g font-size="15"><rect x="350" y="186" width="150" height="20" fill="#fff"/><text x="354" y="201">bids / cleared trades</text></g>
+
+    <g font-size="15"><rect x="865" y="186" width="180" height="20" fill="#fff"/><text x="869" y="201">lock (pays) · withdraw · read</text></g>
+
+    <g font-size="15"><rect x="706" y="286" width="300" height="20" fill="#fff"/><text x="710" y="301">charge / discharge cmds · read state</text></g>
+
+    <g font-size="15"><rect x="706" y="456" width="330" height="20" fill="#fff"/><text x="710" y="471">energy import / export · meter readings</text></g>
+
+    <g font-size="13"><rect x="930" y="361" width="180" height="20" fill="#fff"/><text x="934" y="375">E-programme / actuals</text></g>
+
+    <text x="1220" y="298" font-size="12" fill="#777" font-style="italic" text-anchor="middle">no on-chain link</text>
+
+    <g font-size="15"><rect x="1226" y="456" width="150" height="20" fill="#fff"/><text x="1230" y="471">billing carve-out</text></g>
+  </g>
+
+  <!-- ============ ZONE BOXES (opaque - no sub-components) ============ -->
+  <g stroke="#444" stroke-width="1.5" fill="#f5f5f5">
+    <rect x="550"  y="20"  width="300" height="70" rx="8"/>
+    <rect x="40"   y="170" width="280" height="80" rx="8"/>
+    <rect x="550"  y="170" width="300" height="80" rx="8"/>
+    <rect x="1080" y="170" width="280" height="80" rx="8" fill="#f4e3b2" stroke="#8a6d1f"/>
+    <rect x="560"  y="340" width="280" height="90" rx="8"/>
+    <rect x="1120" y="340" width="200" height="90" rx="8" fill="#cfe2f3" stroke="#4a7ab5"/>
+    <rect x="520"  y="500" width="360" height="80" rx="8"/>
+    <rect x="1080" y="500" width="280" height="80" rx="8"/>
+  </g>
+
+  <g font-size="19" font-weight="600" fill="#222" text-anchor="middle">
+    <text x="700"  y="60">1. User</text>
+    <text x="180"  y="215">3. Market (ASSUME)</text>
+    <text x="700"  y="215">2. Agent</text>
+    <text x="1220" y="203">8. Settlement</text>
+    <text x="1220" y="227" font-size="15" font-weight="400">(on-chain · Blockchain)</text>
+    <text x="700"  y="385">4. Hardware</text>
+    <text x="1220" y="378">6. Settlement</text>
+    <text x="1220" y="402" font-size="15" font-weight="400">(off-chain · BRP)</text>
+    <text x="700"  y="545">5. Grid &amp; System Operators</text>
+    <text x="1220" y="545">7. Energy Provider</text>
+  </g>
+</svg>

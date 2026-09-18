@@ -12,8 +12,10 @@ tech: ["Python", "Solidity", "Blockchain"]
 
 Multi-Agent Systems for Trading Energy: a cross-border energy trading platform for citizens in the Euregio Meuse-Rhine (Netherlands, Belgium, Germany), started September 2025. Lets households and small businesses with solar panels and batteries ("prosumers") manage, store, and trade energy directly, using AI-driven chatbots for user interaction and blockchain for secure peer-to-peer transactions, addressing grid congestion and lowering the threshold for market participation. Builds on the earlier BC4P (Blockchain for Prosumers) project.
 
+![MAS4TE system overview: a user sets schedule and preferences for their agent, which bids into the ASSUME market simulation and pays into the on-chain blockchain settlement, while separately commanding battery hardware that reports energy import/export to the grid, which in turn feeds the off-chain BRP settlement and energy provider billing](/images/mas4te-architecture.svg)
+
 Consortium: Open Universiteit (lead), Boosting Alpha, Climate Cities, Université de Liège, FH Aachen, and Forschungszentrum Jülich. Total budget €2.22M, funded via Interreg Meuse-Rhine.
 
 **Technology:** Python integration layer connecting the [ASSUME](https://github.com/assume-framework/assume) agent-based electricity-market simulation framework to real-time IoT device data (HEMS gateway, MQTT); Solidity smart contracts for pull-payment trade settlement, built and tested with web3.py, Brownie, and Slither static analysis.
 
-**My role:** Led the initial design of the LLM-based agent system and the blockchain settlement layer for peer-to-peer battery storage trades.
+**My role:** Spans the agent architecture and settlement layers: initial design of the LLM-based agent system and the blockchain settlement layer for peer-to-peer battery storage trades.
