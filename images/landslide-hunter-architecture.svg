@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 420" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1450" height="420" fill="#ffffff"/>
+
+  <!-- loop-back arc: tile confidence below target -> acquire another scene -->
+  <path d="M 735,180 C 735,55 315,55 315,180" fill="none" stroke="#c76b2c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="525" y="48" text-anchor="middle" font-size="11" fill="#c76b2c">tile confidence below target? &#8594; acquire another scene</text>
+
+  <!-- Campaign -->
+  <rect x="40" y="180" width="150" height="70" rx="6" fill="#f5f5f5" stroke="#999" stroke-width="1.5"/>
+  <text x="115" y="210" text-anchor="middle" font-size="14" fill="#333">campaign</text>
+  <text x="115" y="230" text-anchor="middle" font-size="10" fill="#555">bbox + event date</text>
+
+  <line x1="190" y1="215" x2="230" y2="215" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- discover_scenes -->
+  <rect x="230" y="180" width="170" height="70" rx="6" fill="#dce8f5" stroke="#4a6fa5" stroke-width="1.5"/>
+  <text x="315" y="210" text-anchor="middle" font-size="14" fill="#333">discover_scenes</text>
+  <text x="315" y="230" text-anchor="middle" font-size="10" fill="#555">Sentinel-2 via STAC</text>
+
+  <line x1="400" y1="215" x2="440" y2="215" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- download_scene -->
+  <rect x="440" y="180" width="170" height="70" rx="6" fill="#dce8f5" stroke="#4a6fa5" stroke-width="1.5"/>
+  <text x="525" y="210" text-anchor="middle" font-size="14" fill="#333">download_scene</text>
+  <text x="525" y="230" text-anchor="middle" font-size="10" fill="#555">GeoTIFF, patch-tiled</text>
+
+  <line x1="610" y1="215" x2="650" y2="215" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- run_model -->
+  <rect x="650" y="180" width="170" height="70" rx="6" fill="#fde3cc" stroke="#c76b2c" stroke-width="1.5"/>
+  <text x="735" y="210" text-anchor="middle" font-size="14" fill="#333">run_model</text>
+  <text x="735" y="230" text-anchor="middle" font-size="10" fill="#555">NDVI · BSI · UNet</text>
+
+  <line x1="820" y1="215" x2="860" y2="215" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- run_timeseries -->
+  <rect x="860" y="180" width="170" height="70" rx="6" fill="#dce8f5" stroke="#4a6fa5" stroke-width="1.5"/>
+  <text x="945" y="210" text-anchor="middle" font-size="14" fill="#333">run_timeseries</text>
+  <text x="945" y="230" text-anchor="middle" font-size="10" fill="#555">pre/post-event</text>
+
+  <line x1="1030" y1="215" x2="1070" y2="215" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- compute_difference -->
+  <rect x="1070" y="180" width="170" height="70" rx="6" fill="#dce8f5" stroke="#4a6fa5" stroke-width="1.5"/>
+  <text x="1155" y="210" text-anchor="middle" font-size="14" fill="#333">compute_difference</text>
+  <text x="1155" y="230" text-anchor="middle" font-size="10" fill="#555">change detection</text>
+
+  <line x1="1240" y1="215" x2="1280" y2="215" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Results map -->
+  <rect x="1280" y="180" width="140" height="70" rx="6" fill="#f5f5f5" stroke="#999" stroke-width="1.5"/>
+  <text x="1350" y="210" text-anchor="middle" font-size="14" fill="#333">results map</text>
+  <text x="1350" y="230" text-anchor="middle" font-size="10" fill="#555">web frontend</text>
+
+  <!-- Infrastructure row -->
+  <rect x="230" y="330" width="170" height="70" rx="6" fill="#f5f5f5" stroke="#999" stroke-width="1.5"/>
+  <text x="315" y="360" text-anchor="middle" font-size="14" fill="#333">STAC API</text>
+  <text x="315" y="380" text-anchor="middle" font-size="10" fill="#555">earth-search.aws</text>
+  <line x1="315" y1="330" x2="315" y2="250" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+
+  <rect x="440" y="330" width="170" height="70" rx="6" fill="#f5f5f5" stroke="#999" stroke-width="1.5"/>
+  <text x="525" y="360" text-anchor="middle" font-size="14" fill="#333">PostgreSQL</text>
+  <text x="525" y="380" text-anchor="middle" font-size="10" fill="#555">campaign / tile state</text>
+  <line x1="518" y1="330" x2="518" y2="250" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <line x1="532" y1="250" x2="532" y2="330" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+
+  <rect x="650" y="330" width="170" height="70" rx="6" fill="#f5f5f5" stroke="#999" stroke-width="1.5"/>
+  <text x="735" y="360" text-anchor="middle" font-size="14" fill="#333">UNet weights</text>
+  <text x="735" y="380" text-anchor="middle" font-size="10" fill="#555">deep-learning model</text>
+  <line x1="735" y1="330" x2="735" y2="250" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+
+  <rect x="860" y="330" width="170" height="70" rx="6" fill="#f5f5f5" stroke="#999" stroke-width="1.5"/>
+  <text x="945" y="360" text-anchor="middle" font-size="14" fill="#333">Celery / Redis</text>
+  <text x="945" y="380" text-anchor="middle" font-size="10" fill="#555">task queue, chains every step</text>
+  <line x1="945" y1="330" x2="945" y2="250" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+</svg>
