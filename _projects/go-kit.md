@@ -2,7 +2,7 @@
 title: "GO-KIT"
 collection: projects
 permalink: /project/go-kit
-excerpt: "Coordinated by Open Universiteit with data partner Calculus, housing corporations Weller Wonen, Wonen Zuid, and Cordium, and installer Habenu Van de Kreeke."
+excerpt: "Coordinated by Open Universiteit with data partner Calculus, housing corporations Weller Wonen, Wonen Zuid, and Cordium, and installer Habenu Van de Kreeke (€500,000 budget, 20 months)."
 date: 2022-10-01
 order: 6
 venue: "Cross-border NL–BE Limburg project; coordinated by Open Universiteit"
@@ -16,7 +16,7 @@ A pilot (2022–2024) deploying AI-driven smart-home sensors in 16 social housin
 
 ![Floor plan of a GO-KIT pilot home showing sensor placement across the ground and upper floors, with a legend for the base station, smartmeter, smart socket, PIR and light, radiator valve, environment multisensor, door sensor, leakage sensor, gas pulse counter, remote control, and QR feedback](/images/slide_4_2.png)
 
-Coordinated by Open Universiteit (CAROU) with data partner Calculus, the AI hub at Brightlands Smart Services Campus, housing corporations Weller Wonen, Wonen Zuid, and Cordium, installer Habenu Van de Kreeke, and the Construction Confederation (Belgian Limburg).
+Coordinated by Open Universiteit (CAROU) with data partner Calculus, the AI hub at Brightlands Smart Services Campus, housing corporations Weller Wonen, Wonen Zuid, and Cordium, installer Habenu Van de Kreeke, and the Construction Confederation (Belgian Limburg). Total budget €500,000 over 20 months.
 
 **Technology:** Python data pipeline (pandas, scikit-learn) integrating the Calculus IoT API into a sensor database, with data cleaning and Isolation-Forest-based anomaly detection across occupancy, environmental, and utility sensors.
 

@@ -2,7 +2,7 @@
 title: "Anti-Greenwashing"
 collection: projects
 permalink: /project/anti-greenwashing
-excerpt: "Private collaboration between Open Universiteit and APG."
+excerpt: "Private collaboration between Open Universiteit and APG (€210,000 budget)."
 date: 2023-11-01
 order: 5
 venue: "Private collaboration between Open Universiteit and APG"
