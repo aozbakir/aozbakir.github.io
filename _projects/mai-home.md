@@ -14,7 +14,7 @@ An Interreg Flanders–Netherlands project (started September 2023) combating en
 
 ![MAI-HOME architecture: sensors and heating system inside the house connect via a LoRa gateway to a digital twin (server, database, and occupancy/thermal-comfort/energy-use models), which schedules heating back to the house and feeds an energy dashboard that housing corps and tenants act on](/images/maihome-architecture.svg)
 
-Has produced peer-reviewed papers in *Energy and Buildings* and at ACM SAC, and the HOMESENSE multisensor dataset (accepted, *Scientific Data*). See [Publications](/publications/).
+Has produced peer-reviewed papers in *Energy and Buildings* and at ACM SAC, and the HOMESENSE multisensor dataset (*Scientific Data*). See [Publications](/publications/).
 
 **Technology:** Python ML pipeline with modular data-download, processing, training, and inference stages; LSTM and Transformer model architectures for occupancy and energy-use inference from sparse IoT sensor data.
 

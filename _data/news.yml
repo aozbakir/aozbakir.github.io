@@ -8,8 +8,10 @@
 - date: 2026-09-18
   text: 'New blog post: "[Reprogramming a General-Purpose LLM for Electricity Demand Forecasting](/blog/reprogramming-llm-electricity-forecasting/)," comparing a reprogrammed LLM against seven other forecasting methods, from a naive baseline to a genuine time-series foundation model.'
 - date: 2026-09-23
+  text: 'Early preview available of the HOMESENSE paper in *Scientific Data* (Nature): "A multisensor dataset of energy use and activity in Dutch social housing," [doi.org/10.1038/s41597-026-08321-w](https://doi.org/10.1038/s41597-026-08321-w).'
+- date: 2026-09-23
   text: "Teaching Programming Practicals (C programming) for the OpenEU programme, starting later this month."
 - date: 2026-09-01
-  text: 'Paper submitted to *Sustainable Cities and Society*: "From Model Accuracy to Household Intervention Evidence: A Systematic Review of Sensor- and Data-Driven Residential Energy Conservation (2014–2025)," led by PhD student Y. Sheng, with D. Iren, C. Maathuis, and S. Bromuri. Currently under review.'
+  text: 'Paper submitted to *Energy and Built Environment*: "From Model Accuracy to Household Intervention Evidence: A Systematic Review of Sensor- and Data-Driven Residential Energy Conservation (2014–2025)," led by PhD student Y. Sheng, with D. Iren, C. Maathuis, and S. Bromuri. Currently under review.'
 - date: 2026-11-11
-  text: 'Invited to speak at the GenAICSEdu workshop (co-hosted with ICAB), Utrecht University — "Think Like a Chief Engineer: An MSc Course Where AI is Both a Partner and Black Box," with S. Bromuri.'
+  text: 'Invited to speak at the GenAICSEdu workshop (co-hosted with ICAB), Utrecht University: "Think Like a Chief Engineer: An MSc Course Where AI is Both a Partner and Black Box," with S. Bromuri.'
