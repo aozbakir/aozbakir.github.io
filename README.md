@@ -21,12 +21,12 @@ rm -rf _site .jekyll-cache .jekyll-metadata
 
 ## Editing content
 
-* `_config.yml` — site-wide settings (name, bio, links)
-* `_pages/about.md` — homepage bio
-* `_pages/cv.md` — CV page
-* `_projects/` — one file per project
-* `_publications/` — one file per publication
-* `_teaching/` — one file per course
-* `_data/news.yml` — news timeline (`/news/` page and the homepage preview)
+* `_config.yml`: site-wide settings (name, bio, links)
+* `_pages/about.md`: homepage bio
+* `_pages/cv.md`: CV page
+* `_projects/`: one file per project
+* `_publications/`: one file per publication
+* `_teaching/`: one file per course
+* `_data/news.yml`: news timeline (`/news/` page and the homepage preview)
 
 See `CONVENTIONS.md` for the site's writing and visual conventions.
