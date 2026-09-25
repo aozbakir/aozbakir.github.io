@@ -99,6 +99,7 @@ The full publication list (including earlier geophysics work and work under revi
 
 ## Service and leadership
 
+* Member, Master's AI Curriculum Committee, Open Universiteit
 * Convener, vEGU21 / EGU22, "Active tectonics and geodynamics of the Eastern Mediterranean"
 * Reviewer for *Earth and Planetary Science Letters*, *Nature Communications Earth & Environment*, *Mediterranean Geoscience Reviews*
 
